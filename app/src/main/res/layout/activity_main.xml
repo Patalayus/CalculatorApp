@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.laminar.calculator.calculator.MainActivity"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/Number1"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter your first number here."
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/Number2"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter your second number here."
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/enps_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Total"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <Button
+        android:id="@+id/sumof"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        android:text="Add Numbers" />
+
+    <Button
+        android:id="@+id/subtract"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark"
+        android:text="Subtract Numbers" />
+
+    <Button
+        android:id="@+id/bleh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_dark"
+        android:text="Multiply Numbers" />
+
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_purple"
+        android:text="Divide Numbers" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="by Patalayus" />
+</LinearLayout>
