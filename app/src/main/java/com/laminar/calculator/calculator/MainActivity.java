@@ -2,6 +2,8 @@ package com.laminar.calculator.calculator;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -44,13 +46,11 @@ public class MainActivity extends AppCompatActivity {
         add.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
+
                 if((Number1.length() == 0)||(Number2.length()==0))
                 {
-                    Context context = getApplicationContext();
-                    CharSequence text = "Please enter a number";
-                    int duration = Toast.LENGTH_SHORT;
-                    Toast toast = Toast.makeText(context, text, duration);
-                    toast.show();
+                    Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
+                    enternum.show();
                 }
                 else {
                     num1 = Double.parseDouble(Number1.getText().toString());
@@ -64,11 +64,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 if((Number1.length()==0)||(Number2.length()==0)){
-                    Context context = getApplicationContext();
-                    CharSequence text = "Please enter a number";
-                    int duration = Toast.LENGTH_SHORT;
-                    Toast toast = Toast.makeText(context,   text, duration);
-                    toast.show();
+                    Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
+                    enternum.show();
                 }else {
                     num1 = Double.parseDouble(Number1.getText().toString());
                     num2 = Double.parseDouble(Number2.getText().toString());
@@ -81,11 +78,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 if((Number1.length()==0)||(Number2.length()==0)){
-                    Context context = getApplicationContext();
-                    CharSequence text = "Please enter a number";
-                    int duration = Toast.LENGTH_SHORT;
-                    Toast toast = Toast.makeText(context,   text, duration);
-                    toast.show();
+                    Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
+                    enternum.show();
                 }else {
                     num1 = Double.parseDouble(Number1.getText().toString());
                     num2 = Double.parseDouble(Number2.getText().toString());
@@ -98,11 +92,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 if((Number1.length()==0)||(Number2.length()==0)){
-                    Context context = getApplicationContext();
-                    CharSequence text = "Please enter a number";
-                    int duration = Toast.LENGTH_SHORT;
-                    Toast toast = Toast.makeText(context,   text, duration);
-                    toast.show();
+                    Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
+                    enternum.show();
                 }else {
                     num1 = Double.parseDouble(Number1.getText().toString());
                     num2 = Double.parseDouble(Number2.getText().toString());
@@ -118,11 +109,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 if((Number1.length()==0)||(Number2.length()==0)){
-                    Context context = getApplicationContext();
-                    CharSequence text = "Please enter a number";
-                    int duration = Toast.LENGTH_SHORT;
-                    Toast toast = Toast.makeText(context,   text, duration);
-                    toast.show();
+                    Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
+                    enternum.show();
                 }else {
                 num1 = Double.parseDouble(Number1.getText().toString());
                 num2 =Double.parseDouble(Number2.getText().toString());
