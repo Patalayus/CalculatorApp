@@ -13,7 +13,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
     TextView result;
     EditText Number1, Number2;
     Button add, subtract,divide, multiply, power;
@@ -24,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
     //premative int variable
     double enps_secondary;
     //for power calculation
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -92,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 if((Number1.length()==0)||(Number2.length()==0)){
-                    Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
+                    Snackbar enternum = Snackbar.make(v, "Please enter a number you silly billy", Snackbar.LENGTH_LONG);
                     enternum.show();
                 }else {
                     num1 = Double.parseDouble(Number1.getText().toString());
