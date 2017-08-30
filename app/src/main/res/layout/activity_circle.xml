@@ -12,26 +12,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Enter your radius here." />
+        android:inputType="number|numberSigned|numberDecimal"
+        android:hint="Enter your radius here"/>
 
     <TextView
         android:id="@+id/output_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Your total here."
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/calculateButton_ID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="RadiusCalculation"
         android:text="calculate area" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Work out area of a @string/button_circle" />
+        android:text="Work out area of a circle."
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
 </LinearLayout>
