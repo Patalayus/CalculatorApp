@@ -15,11 +15,20 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.support.v7.app.ActionBarActivity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.content.Intent;
+
+import static com.laminar.calculator.calculator.R.id.circle_button;
+
 
 public class MainActivity extends AppCompatActivity {
     TextView result;
     EditText Number1;
-    Button add, subtract,divide, multiply, power, calculate, percentage, qformula;
+    Button add, subtract,divide, multiply, power, calculate, percentage, qformula, circle_class;
 
     double enps_result;
     //premative float variable
@@ -48,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         calculate = (Button)findViewById(R.id.calculate);
         percentage = (Button)findViewById(R.id.percentage);
         qformula = (Button)findViewById(R.id.qformula);
+        circle_class = (Button)findViewById(circle_button);
 
 
 
@@ -101,9 +111,11 @@ public class MainActivity extends AppCompatActivity {
                 if (Number1.length() == 0) {
                     Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
                     enternum.show();
+
                 } else if (current_op == 0) {
                     Snackbar nothing = Snackbar.make(v, "Nothing to calculate", Snackbar.LENGTH_LONG);
                     nothing.show();
+
                 } else if (current_op == 1) {
                     //if current_op equals 1, add numbers together
                     enps_result = num1 + Double.parseDouble(Number1.getText().toString());
@@ -112,6 +124,7 @@ public class MainActivity extends AppCompatActivity {
                     Number1.setHint("Enter your first number here");
                     result.setText(String.valueOf(enps_result));
                     current_op = 0;
+
                 } else if (current_op == 2) {
                     //if current_op equals 2, minus numbers
                     enps_result = num1 - Double.parseDouble(Number1.getText().toString());
@@ -120,6 +133,7 @@ public class MainActivity extends AppCompatActivity {
                     Number1.setHint("Enter your first number here.");
                     result.setText(String.valueOf(enps_result));
                     current_op = 0;
+
                 } else if (current_op == 3) {
                     //if current_op equals 3, multiply numbers
                     enps_result = num1 * Double.parseDouble(Number1.getText().toString());
@@ -128,6 +142,7 @@ public class MainActivity extends AppCompatActivity {
                     Number1.setHint("Enter your first number here.");
                     result.setText(String.valueOf(enps_result));
                     current_op = 0;
+
                 } else if (current_op == 4) {
                     //if current_op equals 4, divide numbers
                     enps_result = num1 / Double.parseDouble(Number1.getText().toString());
@@ -136,6 +151,7 @@ public class MainActivity extends AppCompatActivity {
                     Number1.setHint("Enter your first number here.");
                     result.setText(String.valueOf(enps_result));
                     current_op = 0;
+
                 } else if (current_op == 5) {
                     //if current_op equals 5, multiply numbers by a power
                     enps_result = Math.pow(num1, Double.parseDouble(Number1.getText().toString()));
@@ -144,6 +160,7 @@ public class MainActivity extends AppCompatActivity {
                     Number1.setHint("Enter your first number here.");
                     result.setText(String.valueOf(enps_result));
                     current_op = 0;
+
                 } else if (current_op == 6){
                     //if current_op equals 6, work out a percentage
                     enps_secondary = num1 / 100;
@@ -156,6 +173,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
 
         // Clicks the calculate button if the user presses done on the keyboard
         Number1.setOnEditorActionListener(new EditText.OnEditorActionListener() {
@@ -174,9 +192,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v){
                 startActivity(new Intent(MainActivity.this, QFormula.class));
             }
-        });
+        });}
 
+    public void onButtonClick(View v){
+        if(v.getId()==R.id.circle_button){
+            Intent enps_indent = new Intent(MainActivity.this, activity_circle.class);
+            startActivity(enps_indent);
+        }
     }
+
     public void operationHandle(View v, int optype){
         if(Number1.length()==0){
             if (current_op != 0) {
@@ -198,5 +222,6 @@ public class MainActivity extends AppCompatActivity {
                 presscalc.show();
             }
         }
+
     }
 }
