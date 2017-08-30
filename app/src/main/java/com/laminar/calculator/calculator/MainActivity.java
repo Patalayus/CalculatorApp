@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     double enps_secondary;
     //for power calculation
     int current_op;
+    String[] opstrings = new String[]{"No op", "Add...", "Minus...", "Multiplied by...", "Divided by...", "To the power of..."};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,146 +45,42 @@ public class MainActivity extends AppCompatActivity {
         power = (Button)findViewById(R.id.Power);
         calculate = (Button)findViewById(R.id.calculate);
 
+
+
+
         // Onclick listeners for all buttons
         add.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                // Check if textbox is empty
-                if(Number1.length() == 0)
-                {
-                    // If textbox is empty and as different operation was being performed, change to this operation
-                    if (current_op != 0) {
-                        current_op = 1;
-                        Number1.setHint(String.valueOf(num1) + " Add...");
-                    }
-                    else {
-                        Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
-                        enternum.show();
-                    }
-                }
-                else {
-                    // Otherwise, store value in text box and reset it if there is no operation
-                    if (current_op == 0){
-                        num1 = Double.parseDouble(Number1.getText().toString());
-                        current_op = 1;
-                        Number1.setText("");
-                        Number1.setHint(String.valueOf(num1) + " Add...");
-                    } else {
-                        // If there is something in the box when another operation has already been pressed, assume it is in error
-                        Snackbar presscalc = Snackbar.make(v, "Please press calculate", Snackbar.LENGTH_LONG);
-                        presscalc.show();
-                    }
-                }
+                operationHandle(v, 1);
             }
         });
 
         subtract.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                if(Number1.length()==0){
-                    if (current_op != 0) {
-                        current_op = 2;
-                        Number1.setHint(String.valueOf(num1) + " Minus...");
-                    }
-                    else {
-                        Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
-                        enternum.show();
-                    }
-                }else {
-                    if (current_op == 0){
-                        num1 = Double.parseDouble(Number1.getText().toString());
-                        current_op = 2;
-                        Number1.setText("");
-                        Number1.setHint(String.valueOf(num1) + " Minus...");
-                    } else {
-                        Snackbar presscalc = Snackbar.make(v, "Please press calculate", Snackbar.LENGTH_LONG);
-                        presscalc.show();
-
-                    }
-
-                }
+                operationHandle(v, 2);
             }
         });
 
         multiply.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                if(Number1.length()==0){
-                    if (current_op != 0) {
-                        current_op = 3;
-                        Number1.setHint(String.valueOf(num1) + " Multiplied by...");
-                    }
-                    else {
-                        Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
-                        enternum.show();
-                    }
-                }else {
-                    if (current_op == 0){
-                        num1 = Double.parseDouble(Number1.getText().toString());
-                        current_op = 3;
-                        Number1.setText("");
-                        Number1.setHint(String.valueOf(num1) + " Multiplied by...");
-                    } else {
-                        Snackbar presscalc = Snackbar.make(v, "Please press calculate", Snackbar.LENGTH_LONG);
-                        presscalc.show();
-
-                    }
-
-                }
+                operationHandle(v, 3);
             }
         });
 
         divide.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                if(Number1.length()==0){
-                    if (current_op != 0) {
-                        current_op = 4;
-                        Number1.setHint(String.valueOf(num1) + " Divided by...");
-                    }
-                    else {
-                        Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
-                        enternum.show();
-                    }
-                }else {
-                    if (current_op == 0){
-                        num1 = Double.parseDouble(Number1.getText().toString());
-                        current_op = 4;
-                        Number1.setText("");
-                        Number1.setHint(String.valueOf(num1) + " Divided by...");
-                    } else {
-                        Snackbar presscalc = Snackbar.make(v, "Please press calculate", Snackbar.LENGTH_LONG);
-                        presscalc.show();
-
-                    }
-
-            }}
+                operationHandle(v, 4);
+            }
         });
 
         power.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                if(Number1.length()==0){
-                    if (current_op != 0) {
-                        current_op = 5;
-                        Number1.setHint(String.valueOf(num1) + " To the power of...");
-                    }
-                    else {
-                        Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
-                        enternum.show();
-                    }
-                }else {
-                    if (current_op == 0){
-                        num1 = Double.parseDouble(Number1.getText().toString());
-                        current_op = 5;
-                        Number1.setText("");
-                        Number1.setHint(String.valueOf(num1) + " To the power of...");
-                    } else {
-                        Snackbar presscalc = Snackbar.make(v, "Please press calculate", Snackbar.LENGTH_LONG);
-                        presscalc.show();
-                    }
-
-                }
+                operationHandle(v,5);
             }
         });
 
@@ -248,5 +145,27 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+    public void operationHandle(View v, int optype){
+        if(Number1.length()==0){
+            if (current_op != 0) {
+                current_op = optype;
+                Number1.setHint(String.valueOf(num1) + " " + opstrings[optype]);
+            }
+            else {
+                Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
+                enternum.show();
+            }
+        }else {
+            if (current_op == 0) {
+                num1 = Double.parseDouble(Number1.getText().toString());
+                current_op = optype;
+                Number1.setText("");
+                Number1.setHint(String.valueOf(num1) + " " + opstrings[optype]);
+            } else {
+                Snackbar presscalc = Snackbar.make(v, "Please press calculate", Snackbar.LENGTH_LONG);
+                presscalc.show();
+            }
+        }
     }
 }
