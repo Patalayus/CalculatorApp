@@ -139,7 +139,8 @@ public class MainActivity extends AppCompatActivity {
                     result.setText(String.valueOf(enps_result));
                     current_op = 0;
                 } else if (current_op == 6){
-                    enps_result = num1 / Double.parseDouble(Number1.getText().toString());
+                    enps_secondary = num1 / 100;
+                    enps_result = enps_secondary * Double.parseDouble(Number1.getText().toString());
                     num1 = 0;
                     Number1.setText("");
                     Number1.setHint("Enter your first number here.");
@@ -160,7 +161,6 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-
     }
     public void operationHandle(View v, int optype){
         if(Number1.length()==0){
