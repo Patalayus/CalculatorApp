@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+//importing packages
 
 public class MainActivity extends AppCompatActivity {
     TextView result;
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
                     enternum.show();
+                    //validation on
                 }
                 else {
                     if (current_op == 0){
@@ -58,9 +60,11 @@ public class MainActivity extends AppCompatActivity {
                         current_op = 1;
                         Number1.setText("");
                         Number1.setHint(String.valueOf(num1) + " Add...");
+                        //
                     } else {
                         Snackbar presscalc = Snackbar.make(v, "Please press calculate", Snackbar.LENGTH_LONG);
                         presscalc.show();
+                        //prompts user to press calculate button
                     }
                 }
             }
@@ -147,7 +151,6 @@ public class MainActivity extends AppCompatActivity {
                         Snackbar presscalc = Snackbar.make(v, "Please press calculate", Snackbar.LENGTH_LONG);
                         presscalc.show();
                     }
-
                 }
             }
         });
@@ -158,10 +161,12 @@ public class MainActivity extends AppCompatActivity {
                 if(Number1.length()==0) {
                     Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
                     enternum.show();
+                    //prompts user to enter a number
                 }
                 else if(current_op == 0){
                     Snackbar nothing = Snackbar.make(v, "Nothing to calculate", Snackbar.LENGTH_LONG);
                     nothing.show();
+                    //validates calculation if current_op equals 0
                 }else if(current_op == 1){
                     enps_result = num1 + Double.parseDouble(Number1.getText().toString());
                     num1 = 0;
