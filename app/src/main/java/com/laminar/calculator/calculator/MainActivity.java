@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     double enps_secondary;
     //for power calculation
     int current_op;
-    String[] opstrings = new String[]{"No op", "Add...", "Minus...", "Multiplied by...", "Divided by...", "To the power of..."};
+    String[] opstrings = new String[]{"No op", "Add...", "Minus...", "Multiplied by...", "Divided by...", "To the power of...", "Percent of..."};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
