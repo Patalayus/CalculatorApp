@@ -1,6 +1,7 @@
 package com.laminar.calculator.calculator;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.renderscript.Double3;
 import android.support.design.widget.Snackbar;
@@ -18,7 +19,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     TextView result;
     EditText Number1;
-    Button add, subtract,divide, multiply, power, calculate, percentage;
+    Button add, subtract,divide, multiply, power, calculate, percentage, qformula;
 
     double enps_result;
     //premative float variable
@@ -46,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
         power = (Button)findViewById(R.id.Power);
         calculate = (Button)findViewById(R.id.calculate);
         percentage = (Button)findViewById(R.id.percentage);
+        qformula = (Button)findViewById(R.id.qformula);
+
 
 
         // Onclick listeners for all buttons
@@ -165,6 +168,14 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
+
+        qformula.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                startActivity(new Intent(MainActivity.this, QFormula.class));
+            }
+        });
+
     }
     public void operationHandle(View v, int optype){
         if(Number1.length()==0){

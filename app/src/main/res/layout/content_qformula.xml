@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.laminar.calculator.calculator.QFormula"
+    tools:showIn="@layout/activity_qformula">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.04" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <EditText
+                android:id="@+id/num1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.00"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="a"
+                android:inputType="number|numberSigned|numberDecimal"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/num2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.00"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="b"
+                android:inputType="number|numberSigned|numberDecimal"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/num3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.00"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="c"
+                android:inputType="number|numberSigned|numberDecimal"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate" />
+
+        <TextView
+            android:id="@+id/res1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.04"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="X1"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/res2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.04"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="X2"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.04"
+            app:srcCompat="@drawable/qformula" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

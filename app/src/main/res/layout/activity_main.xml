@@ -111,6 +111,17 @@
         android:background="@color/colorPrimary"
         android:text="Calculate" />
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.18" />
+
+    <Button
+        android:id="@+id/qformula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quadratic Formula" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"

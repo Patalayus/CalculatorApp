@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Calculator</string>
     <string name="entervaluehint">Enter your first number here</string>
+    <string name="title_activity_qformula">Quadratic Formula</string>
 </resources>
