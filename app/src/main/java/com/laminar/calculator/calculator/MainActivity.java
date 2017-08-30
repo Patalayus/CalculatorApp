@@ -5,7 +5,9 @@ import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -42,13 +44,14 @@ public class MainActivity extends AppCompatActivity {
         power = (Button)findViewById(R.id.Power);
         calculate = (Button)findViewById(R.id.calculate);
 
-
+        // Onclick listeners for all buttons
         add.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-
+                // Check if textbox is empty
                 if(Number1.length() == 0)
                 {
+                    // If textbox is empty and as different operation was being performed, change to this operation
                     if (current_op != 0) {
                         current_op = 1;
                         Number1.setHint(String.valueOf(num1) + " Add...");
@@ -59,12 +62,14 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 else {
+                    // Otherwise, store value in text box and reset it if there is no operation
                     if (current_op == 0){
                         num1 = Double.parseDouble(Number1.getText().toString());
                         current_op = 1;
                         Number1.setText("");
                         Number1.setHint(String.valueOf(num1) + " Add...");
                     } else {
+                        // If there is something in the box when another operation has already been pressed, assume it is in error
                         Snackbar presscalc = Snackbar.make(v, "Please press calculate", Snackbar.LENGTH_LONG);
                         presscalc.show();
                     }
@@ -185,6 +190,7 @@ public class MainActivity extends AppCompatActivity {
         calculate.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
+                // Perform calculation operation dependant on current operation, then reset.
                 if(Number1.length()==0) {
                     Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
                     enternum.show();
@@ -228,6 +234,18 @@ public class MainActivity extends AppCompatActivity {
                     result.setText(String.valueOf(enps_result));
                     current_op = 0;
                 }}
+        });
+
+        // Clicks the calculate button if the user presses done on the keyboard
+        Number1.setOnEditorActionListener(new EditText.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                if (actionId == EditorInfo.IME_ACTION_DONE) {
+                    calculate.performClick();
+                    return true;
+                }
+                return false;
+            }
         });
 
     }
