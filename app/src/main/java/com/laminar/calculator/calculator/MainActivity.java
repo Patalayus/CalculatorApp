@@ -2,6 +2,7 @@ package com.laminar.calculator.calculator;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.renderscript.Double3;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -21,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     double enps_result;
     //premative float variable
-    double num1, num2;
+    double num1;
     //premative int variable
     double enps_secondary;
     //for power calculation
@@ -138,7 +139,12 @@ public class MainActivity extends AppCompatActivity {
                     result.setText(String.valueOf(enps_result));
                     current_op = 0;
                 } else if (current_op == 6){
-                    ;
+                    enps_result = num1 / Double.parseDouble(Number1.getText().toString());
+                    num1 = 0;
+                    Number1.setText("");
+                    Number1.setHint("Enter your first number here.");
+                    result.setText(String.valueOf(enps_result));
+                    current_op = 0;
                 }
             }
         });
