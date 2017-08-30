@@ -135,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 if(Number1.length()==0){
-                    Snackbar enternum = Snackbar.make(v, "Please enter a number you silly billy", Snackbar.LENGTH_LONG);
+                    Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
                     enternum.show();
                 }else {
                     if (current_op == 0){
@@ -157,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 if(Number1.length()==0) {
-                    Snackbar enternum = Snackbar.make(v, "Please enter a number you silly billy", Snackbar.LENGTH_LONG);
+                    Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
                     enternum.show();
                 }
                 else if(current_op == 0){
@@ -167,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
                     enps_result = num1 + Double.parseDouble(Number1.getText().toString());
                     num1 = 0;
                     Number1.setText("");
-                    Number1.setHint("Enter your first number here.");
+                    Number1.setHint("Enter your first number here");
                     result.setText(String.valueOf(enps_result));
                     current_op = 0;
                 }else if(current_op == 2){

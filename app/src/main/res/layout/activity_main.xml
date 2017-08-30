@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="68dp"
         app:srcCompat="@drawable/opensourcecalculator"
+        android:contentDescription="App logo"
         android:layout_weight="0.21" />
 
     <EditText
@@ -20,8 +21,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Enter your first number here."
-        android:inputType="number" />
+        android:hint="@string/entervaluehint"
+        android:inputType="number|numberSigned|numberDecimal" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.07" />
 
     <TextView
         android:id="@+id/enps_result"
@@ -31,40 +37,63 @@
         android:text="Total"
         android:textAppearance="@android:style/TextAppearance.Material.Large" />
 
-    <Button
-        android:id="@+id/sumof"
+    <Space
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_red_light"
-        android:text="Add Numbers" />
+        android:layout_weight="0.07" />
 
-    <Button
-        android:id="@+id/subtract"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?android:attr/colorFocusedHighlight"
-        android:text="Subtract Numbers" />
+        android:layout_height="49dp"
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/bleh"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?android:attr/colorPressedHighlight"
-        android:text="Multiply Numbers" />
+        <Button
+            android:id="@+id/sumof"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_light"
+            android:text="+" />
 
-    <Button
-        android:id="@+id/divide"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/holo_green_dark"
-        android:text="Divide Numbers" />
+        <Button
+            android:id="@+id/subtract"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/colorFocusedHighlight"
+            android:text="-" />
 
-    <Button
-        android:id="@+id/Power"
+        <Button
+            android:id="@+id/bleh"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/colorPressedHighlight"
+            android:text="×" />
+
+        <Button
+            android:id="@+id/divide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:text="÷" />
+
+        <Button
+            android:id="@+id/Power"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_dark"
+            android:text="^" />
+
+    </LinearLayout>
+
+
+    <Space
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_blue_dark"
-        android:text="Power Numbers" />
+        android:layout_weight="0.04" />
 
     <Button
         android:id="@+id/calculate"
