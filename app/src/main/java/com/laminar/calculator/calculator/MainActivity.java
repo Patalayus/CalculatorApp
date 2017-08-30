@@ -2,6 +2,7 @@ package com.laminar.calculator.calculator;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.renderscript.Double2;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -17,7 +18,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     TextView result;
     EditText Number1;
-    Button add, subtract,divide, multiply, power, calculate;
+    Button add, subtract,divide, multiply, power, calculate, percentage;
 
     double enps_result;
     //premative float variable
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         divide = (Button)findViewById(R.id.divide);
         power = (Button)findViewById(R.id.Power);
         calculate = (Button)findViewById(R.id.calculate);
+        percentage = (Button)findViewById(R.id.Percentage);
 
         // Onclick listeners for all buttons
         add.setOnClickListener(new View.OnClickListener(){
@@ -187,6 +189,33 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        percentage.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                if(Number1.length()==0){
+                    if (current_op != 0) {
+                        current_op = 6;
+                        Number1.setHint(String.valueOf(num1) + " Percent of...");
+                    }
+                    else {
+                        Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
+                        enternum.show();
+                    }
+                }else {
+                    if (current_op == 0){
+                        num1 = Double.parseDouble(Number1.getText().toString());
+                        current_op = 6;
+                        Number1.setText("");
+                        Number1.setHint(String.valueOf(num1) + " Percent of...");
+                    } else {
+                        Snackbar presscalc = Snackbar.make(v, "Please press calculate", Snackbar.LENGTH_LONG);
+                        presscalc.show();
+                    }
+
+                }
+            }
+        });
+
         calculate.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
@@ -233,7 +262,17 @@ public class MainActivity extends AppCompatActivity {
                     Number1.setHint("Enter your first number here.");
                     result.setText(String.valueOf(enps_result));
                     current_op = 0;
-                }}
+                }
+                else if(current_op == 6){
+                    double enps_num1percentage = num1 * 100;
+                    double enps_result = enps_num1percentage / Double.parseDouble(Number1.getText().toString());
+                    num1 = 0;
+                    Number1.setText("");
+                    Number1.setHint("Enter your first number here.");
+                    result.setText(String.valueOf(enps_result));
+                    current_op = 0;
+                }
+            }
         });
 
         // Clicks the calculate button if the user presses done on the keyboard
