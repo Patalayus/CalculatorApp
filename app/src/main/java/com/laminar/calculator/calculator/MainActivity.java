@@ -53,10 +53,15 @@ public class MainActivity extends AppCompatActivity {
                     enternum.show();
                 }
                 else {
-                    current_op = 1;
-                    num1 += Double.parseDouble(Number1.getText().toString());
-                    Number1.setText("");
-                    Number1.setHint(String.valueOf(num1) + " Add...");
+                    if (current_op == 0){
+                        num1 = Double.parseDouble(Number1.getText().toString());
+                        current_op = 1;
+                        Number1.setText("");
+                        Number1.setHint(String.valueOf(num1) + " Add...");
+                    } else {
+                        Snackbar presscalc = Snackbar.make(v, "Please press calculate", Snackbar.LENGTH_LONG);
+                        presscalc.show();
+                    }
                 }
             }
         });
@@ -70,12 +75,15 @@ public class MainActivity extends AppCompatActivity {
                 }else {
                     if (current_op == 0){
                         num1 = Double.parseDouble(Number1.getText().toString());
+                        current_op = 2;
+                        Number1.setText("");
+                        Number1.setHint(String.valueOf(num1) + " Minus...");
                     } else {
-                        num1 -= Double.parseDouble(Number1.getText().toString());
+                        Snackbar presscalc = Snackbar.make(v, "Please press calculate", Snackbar.LENGTH_LONG);
+                        presscalc.show();
+
                     }
-                    current_op = 2;
-                    Number1.setText("");
-                    Number1.setHint(String.valueOf(num1) + " Minus...");
+
                 }
             }
         });
@@ -89,12 +97,15 @@ public class MainActivity extends AppCompatActivity {
                 }else {
                     if (current_op == 0){
                         num1 = Double.parseDouble(Number1.getText().toString());
+                        current_op = 3;
+                        Number1.setText("");
+                        Number1.setHint(String.valueOf(num1) + " Multiplied by...");
                     } else {
-                        num1 *= Double.parseDouble(Number1.getText().toString());
+                        Snackbar presscalc = Snackbar.make(v, "Please press calculate", Snackbar.LENGTH_LONG);
+                        presscalc.show();
+
                     }
-                    current_op = 3;
-                    Number1.setText("");
-                    Number1.setHint(String.valueOf(num1) + " Multiplied by...");
+
                 }
             }
         });
@@ -108,12 +119,15 @@ public class MainActivity extends AppCompatActivity {
                 }else {
                     if (current_op == 0){
                         num1 = Double.parseDouble(Number1.getText().toString());
+                        current_op = 4;
+                        Number1.setText("");
+                        Number1.setHint(String.valueOf(num1) + " Divided by...");
                     } else {
-                        num1 /= Double.parseDouble(Number1.getText().toString());
+                        Snackbar presscalc = Snackbar.make(v, "Please press calculate", Snackbar.LENGTH_LONG);
+                        presscalc.show();
+
                     }
-                    current_op = 4;
-                    Number1.setText("");
-                    Number1.setHint(String.valueOf(num1) + " Divided by...");
+
             }}
         });
 
@@ -126,13 +140,15 @@ public class MainActivity extends AppCompatActivity {
                 }else {
                     if (current_op == 0){
                         num1 = Double.parseDouble(Number1.getText().toString());
-                    } else {
+                        current_op = 5;
                         num1 = Math.pow(num1, Double.parseDouble(Number1.getText().toString()));
+                        Number1.setText("");
+                        Number1.setHint(String.valueOf(num1) + " To the power of...");
+                    } else {
+                        Snackbar presscalc = Snackbar.make(v, "Please press calculate", Snackbar.LENGTH_LONG);
+                        presscalc.show();
                     }
-                    current_op = 5;
-                    num1 = Math.pow(num1, Double.parseDouble(Number1.getText().toString()));
-                    Number1.setText("");
-                    Number1.setHint(String.valueOf(num1) + " To the power of...");
+
                 }
             }
         });
