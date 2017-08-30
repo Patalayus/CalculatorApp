@@ -48,8 +48,6 @@ public class MainActivity extends AppCompatActivity {
         percentage = (Button)findViewById(R.id.percentage);
 
 
-
-
         // Onclick listeners for all buttons
         add.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -104,6 +102,7 @@ public class MainActivity extends AppCompatActivity {
                     Snackbar nothing = Snackbar.make(v, "Nothing to calculate", Snackbar.LENGTH_LONG);
                     nothing.show();
                 } else if (current_op == 1) {
+                    //if current_op equals 1, add numbers together
                     enps_result = num1 + Double.parseDouble(Number1.getText().toString());
                     num1 = 0;
                     Number1.setText("");
@@ -111,6 +110,7 @@ public class MainActivity extends AppCompatActivity {
                     result.setText(String.valueOf(enps_result));
                     current_op = 0;
                 } else if (current_op == 2) {
+                    //if current_op equals 2, minus numbers
                     enps_result = num1 - Double.parseDouble(Number1.getText().toString());
                     num1 = 0;
                     Number1.setText("");
@@ -118,6 +118,7 @@ public class MainActivity extends AppCompatActivity {
                     result.setText(String.valueOf(enps_result));
                     current_op = 0;
                 } else if (current_op == 3) {
+                    //if current_op equals 3, multiply numbers
                     enps_result = num1 * Double.parseDouble(Number1.getText().toString());
                     num1 = 0;
                     Number1.setText("");
@@ -125,6 +126,7 @@ public class MainActivity extends AppCompatActivity {
                     result.setText(String.valueOf(enps_result));
                     current_op = 0;
                 } else if (current_op == 4) {
+                    //if current_op equals 4, divide numbers
                     enps_result = num1 / Double.parseDouble(Number1.getText().toString());
                     num1 = 0;
                     Number1.setText("");
@@ -132,6 +134,7 @@ public class MainActivity extends AppCompatActivity {
                     result.setText(String.valueOf(enps_result));
                     current_op = 0;
                 } else if (current_op == 5) {
+                    //if current_op equals 5, multiply numbers by a power
                     enps_result = Math.pow(num1, Double.parseDouble(Number1.getText().toString()));
                     num1 = 0;
                     Number1.setText("");
@@ -139,6 +142,7 @@ public class MainActivity extends AppCompatActivity {
                     result.setText(String.valueOf(enps_result));
                     current_op = 0;
                 } else if (current_op == 6){
+                    //if current_op equals 6, work out a percentage
                     enps_secondary = num1 / 100;
                     enps_result = enps_secondary * Double.parseDouble(Number1.getText().toString());
                     num1 = 0;
