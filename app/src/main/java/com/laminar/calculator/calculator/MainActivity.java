@@ -17,7 +17,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     TextView result;
     EditText Number1;
-    Button add, subtract,divide, multiply, power, calculate;
+    Button add, subtract,divide, multiply, power, calculate, percentage;
 
     double enps_result;
     //premative float variable
@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         divide = (Button)findViewById(R.id.divide);
         power = (Button)findViewById(R.id.Power);
         calculate = (Button)findViewById(R.id.calculate);
+        percentage = (Button)findViewById(R.id.percentage);
 
 
 
@@ -84,53 +85,62 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        calculate.setOnClickListener(new View.OnClickListener(){
+        percentage.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
+                operationHandle(v,6);
+            }
+        });
+
+        calculate.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
                 // Perform calculation operation dependant on current operation, then reset.
-                if(Number1.length()==0) {
+                if (Number1.length() == 0) {
                     Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
                     enternum.show();
-                }
-                else if(current_op == 0){
+                } else if (current_op == 0) {
                     Snackbar nothing = Snackbar.make(v, "Nothing to calculate", Snackbar.LENGTH_LONG);
                     nothing.show();
-                }else if(current_op == 1){
+                } else if (current_op == 1) {
                     enps_result = num1 + Double.parseDouble(Number1.getText().toString());
                     num1 = 0;
                     Number1.setText("");
                     Number1.setHint("Enter your first number here");
                     result.setText(String.valueOf(enps_result));
                     current_op = 0;
-                }else if(current_op == 2){
+                } else if (current_op == 2) {
                     enps_result = num1 - Double.parseDouble(Number1.getText().toString());
                     num1 = 0;
                     Number1.setText("");
                     Number1.setHint("Enter your first number here.");
                     result.setText(String.valueOf(enps_result));
                     current_op = 0;
-                }else if(current_op == 3){
+                } else if (current_op == 3) {
                     enps_result = num1 * Double.parseDouble(Number1.getText().toString());
                     num1 = 0;
                     Number1.setText("");
                     Number1.setHint("Enter your first number here.");
                     result.setText(String.valueOf(enps_result));
                     current_op = 0;
-                }else if(current_op == 4){
+                } else if (current_op == 4) {
                     enps_result = num1 / Double.parseDouble(Number1.getText().toString());
                     num1 = 0;
                     Number1.setText("");
                     Number1.setHint("Enter your first number here.");
                     result.setText(String.valueOf(enps_result));
                     current_op = 0;
-                }else if(current_op == 5){
+                } else if (current_op == 5) {
                     enps_result = Math.pow(num1, Double.parseDouble(Number1.getText().toString()));
                     num1 = 0;
                     Number1.setText("");
                     Number1.setHint("Enter your first number here.");
                     result.setText(String.valueOf(enps_result));
                     current_op = 0;
-                }}
+                } else if (current_op == 6){
+                    ;
+                }
+            }
         });
 
         // Clicks the calculate button if the user presses done on the keyboard
