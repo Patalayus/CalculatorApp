@@ -141,7 +141,6 @@ public class MainActivity extends AppCompatActivity {
                     if (current_op == 0){
                         num1 = Double.parseDouble(Number1.getText().toString());
                         current_op = 5;
-                        num1 = Math.pow(num1, Double.parseDouble(Number1.getText().toString()));
                         Number1.setText("");
                         Number1.setHint(String.valueOf(num1) + " To the power of...");
                     } else {
