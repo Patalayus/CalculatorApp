@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     TextView result;
-    EditText Number1, Number2;
+    EditText Number1;
     Button add, subtract,divide, multiply, power, calculate;
 
     double enps_result;
@@ -49,8 +49,14 @@ public class MainActivity extends AppCompatActivity {
 
                 if(Number1.length() == 0)
                 {
-                    Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
-                    enternum.show();
+                    if (current_op != 0) {
+                        current_op = 1;
+                        Number1.setHint(String.valueOf(num1) + " Add...");
+                    }
+                    else {
+                        Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
+                        enternum.show();
+                    }
                 }
                 else {
                     if (current_op == 0){
@@ -70,8 +76,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 if(Number1.length()==0){
-                    Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
-                    enternum.show();
+                    if (current_op != 0) {
+                        current_op = 2;
+                        Number1.setHint(String.valueOf(num1) + " Minus...");
+                    }
+                    else {
+                        Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
+                        enternum.show();
+                    }
                 }else {
                     if (current_op == 0){
                         num1 = Double.parseDouble(Number1.getText().toString());
@@ -92,8 +104,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 if(Number1.length()==0){
-                    Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
-                    enternum.show();
+                    if (current_op != 0) {
+                        current_op = 3;
+                        Number1.setHint(String.valueOf(num1) + " Multiplied by...");
+                    }
+                    else {
+                        Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
+                        enternum.show();
+                    }
                 }else {
                     if (current_op == 0){
                         num1 = Double.parseDouble(Number1.getText().toString());
@@ -114,8 +132,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 if(Number1.length()==0){
-                    Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
-                    enternum.show();
+                    if (current_op != 0) {
+                        current_op = 4;
+                        Number1.setHint(String.valueOf(num1) + " Divided by...");
+                    }
+                    else {
+                        Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
+                        enternum.show();
+                    }
                 }else {
                     if (current_op == 0){
                         num1 = Double.parseDouble(Number1.getText().toString());
@@ -135,8 +159,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 if(Number1.length()==0){
-                    Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
-                    enternum.show();
+                    if (current_op != 0) {
+                        current_op = 5;
+                        Number1.setHint(String.valueOf(num1) + " To the power of...");
+                    }
+                    else {
+                        Snackbar enternum = Snackbar.make(v, "Please enter a number", Snackbar.LENGTH_LONG);
+                        enternum.show();
+                    }
                 }else {
                     if (current_op == 0){
                         num1 = Double.parseDouble(Number1.getText().toString());
