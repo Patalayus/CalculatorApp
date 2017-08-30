@@ -28,4 +28,10 @@
         android:layout_height="wrap_content"
         android:text="calculate area" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Work out area of a @string/button_circle" />
+
 </LinearLayout>

@@ -1,31 +1,22 @@
 package com.laminar.calculator.calculator;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.renderscript.Double3;
 import android.support.design.widget.Snackbar;
-import android.support.design.widget.CoordinatorLayout;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-import android.support.v7.app.ActionBarActivity;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.content.Intent;
 
 import static com.laminar.calculator.calculator.R.id.circle_button;
 
 
 public class MainActivity extends AppCompatActivity {
+
     TextView result;
     EditText Number1;
     Button add, subtract,divide, multiply, power, calculate, percentage, qformula, circle_class;
@@ -44,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         result = (TextView)findViewById(R.id.enps_result);
 
@@ -174,7 +166,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         // Clicks the calculate button if the user presses done on the keyboard
         Number1.setOnEditorActionListener(new EditText.OnEditorActionListener() {
             @Override
@@ -186,7 +177,6 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-
         qformula.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
@@ -195,11 +185,10 @@ public class MainActivity extends AppCompatActivity {
         });}
 
     public void onButtonClick(View v){
-        if(v.getId()==R.id.circle_button){
-            Intent enps_indent = new Intent(MainActivity.this, activity_circle.class);
-            startActivity(enps_indent);
-        }
-    }
+        if(v.getId()==R.id.circle_button) {
+            Intent i = new Intent(MainActivity.this, ActivityCircle.class);
+            startActivity(i);
+        }}
 
     public void operationHandle(View v, int optype){
         if(Number1.length()==0){
