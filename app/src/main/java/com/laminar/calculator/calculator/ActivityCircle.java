@@ -34,5 +34,19 @@ public class ActivityCircle extends Activity {
                 RadiusVariable.setText("");
                 //complete calculation, output it in the TextView and reset enter box
             }
+            EditText RadiusVariable2 = (EditText)findViewById(R.id.radius_text2);
+            if(RadiusVariable2.length()==0){
+                Snackbar Reminder = Snackbar.make(a, "Please enter a number", Snackbar.LENGTH_LONG);
+                Reminder.show();
+            }else if (a.getId() == R.id.calculateButton_ID2)
+            {
+                double Circumference = 2 * Math.PI * Double.parseDouble(RadiusVariable2.getText().toString());
+                TextView TextViewV2 = (TextView)findViewById(R.id.output_text2);
+                TextViewV2.setText(""+Circumference);
+                RadiusVariable2.setText("");
+                //complete calculation, output it in the TextView and reset enter box
+            }
     }
 }
+
+
