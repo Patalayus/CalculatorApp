@@ -37,6 +37,7 @@
 
     <ImageView
         android:id="@+id/imageView4"
+        android:src="@drawable/areaofacircle2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/areaofacircle2"
@@ -65,6 +66,7 @@
 
     <ImageView
         android:id="@+id/imageView3"
+        android:src="@drawable/circumferenceofacircle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/circumferenceofacircle"
