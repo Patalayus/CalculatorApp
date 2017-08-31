@@ -15,12 +15,15 @@ public class ActivityCircle extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_circle);}
+    //oncreate function to create layout
 
         public void RadiusCalculation(View a){
+            //validation on entering radius
             EditText RadiusVariable = (EditText)findViewById(R.id.radius_text);
             if(RadiusVariable.length()==0){
                 Snackbar Reminder = Snackbar.make(a, "Please enter a number", Snackbar.LENGTH_LONG);
                 Reminder.show();
+                //show notification if user has not entered a number
             }else if (a.getId() == R.id.calculateButton_ID)
             {
                 double ConvertedR = Double.parseDouble(RadiusVariable.getText().toString());
@@ -29,6 +32,7 @@ public class ActivityCircle extends Activity {
                 TextView TextViewV = (TextView)findViewById(R.id.output_text);
                 TextViewV.setText(""+RadComp);
                 RadiusVariable.setText("");
+                //complete calculation, output it in the TextView and reset enter box
             }
     }
 }
