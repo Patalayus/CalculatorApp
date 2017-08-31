@@ -12,8 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="number|numberSigned|numberDecimal"
-        android:hint="Enter your radius here"/>
+        android:hint="Enter your radius here"
+        android:inputType="number|numberSigned|numberDecimal" />
 
     <TextView
         android:id="@+id/output_text"
@@ -39,8 +39,28 @@
         android:id="@+id/imageView7"
         android:src="@drawable/areaofacircle"
         android:layout_width="match_parent"
+        android:layout_height="129dp"
+        app:srcCompat="@drawable/areaofacircle" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/areaofacircle"
-        android:layout_weight="0.25" />
+        android:ems="10"
+        android:hint="Enter your radius here"
+        android:inputType="number|numberSigned|numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="RadiusCalculation"
+        android:text="calculate circumference" />
 
 </LinearLayout>
