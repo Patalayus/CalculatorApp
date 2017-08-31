@@ -63,4 +63,11 @@
         android:onClick="RadiusCalculation"
         android:text="calculate circumference" />
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/circumferenceofacircle"
+        android:layout_weight="0.20" />
+
 </LinearLayout>
