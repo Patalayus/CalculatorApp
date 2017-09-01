@@ -14,7 +14,8 @@
         android:layout_height="68dp"
         app:srcCompat="@drawable/opensourcecalculator"
         android:contentDescription="App logo"
-        android:layout_weight="0.21" />
+        android:layout_weight="0.21"
+        android:focusableInTouchMode="true"/>
 
     <EditText
         android:id="@+id/Number1"

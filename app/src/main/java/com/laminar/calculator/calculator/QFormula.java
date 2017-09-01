@@ -1,14 +1,18 @@
 package com.laminar.calculator.calculator;
 
 import android.os.Bundle;
+import android.renderscript.Double2;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.view.menu.ExpandedMenuView;
 import android.support.v7.widget.Toolbar;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Space;
 import android.widget.TextView;
 
 public class QFormula extends AppCompatActivity {
@@ -47,23 +51,54 @@ public class QFormula extends AppCompatActivity {
                     a = Double.parseDouble(aInput.getText().toString());
                     b = Double.parseDouble(bInput.getText().toString());
                     c = Double.parseDouble(cInput.getText().toString());
-                    double enps_MINUSb = -b;
-                    double enPS_FourTimesaTimesc = 4 * (a * c);
-                    double enps_BSquared = b * b;
-                    double enps_MinusBPlusTheSquareRootofBSquaredMinus4TimesATimesC = enps_MINUSb + Math.sqrt(enps_BSquared - enPS_FourTimesaTimesc);
-                    double enps_MinusBMinusTheSquareRootofBSquaredMinus4TimesATimesC = enps_MINUSb - Math.sqrt(enps_BSquared - enPS_FourTimesaTimesc);
-                    double enps_totalPOSITIVE = enps_MinusBPlusTheSquareRootofBSquaredMinus4TimesATimesC / 2 * a;
-                    double enps_totalNEGATIVE = enps_MinusBMinusTheSquareRootofBSquaredMinus4TimesATimesC / 2 * a;
-                    x1.setText("" + enps_totalNEGATIVE);
-                    x2.setText("" + enps_totalPOSITIVE);
-                    if(x1.equals("")){
-                        Snackbar enternum = Snackbar.make(v, "Please enter a valid number", Snackbar.LENGTH_LONG);
+
+                    double discriminant = Math.pow(b, 2) - 4 * a * c;
+                    if (discriminant < 0){
+                        Snackbar enternum = Snackbar.make(v, "Imaginary roots", Snackbar.LENGTH_LONG);
                         enternum.show();
+                    } else {
+                        String x1out = Double.toString((-b - Math.sqrt(discriminant)) / 2 * a);
+                        String x2out = Double.toString((-b + Math.sqrt(discriminant)) / 2 * a);
+                        x1.setText(x1out);
+                        x2.setText(x2out);
                     }
                 }
 
             }
 
+        });
+        // Clicks the calculate button if the user presses done on the keyboard
+        aInput.setOnEditorActionListener(new EditText.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                if (actionId == EditorInfo.IME_ACTION_DONE) {
+                    bInput.requestFocus();
+                    return true;
+                }
+                return false;
+            }
+        });
+        // Clicks the calculate button if the user presses done on the keyboard
+        bInput.setOnEditorActionListener(new EditText.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                if (actionId == EditorInfo.IME_ACTION_DONE) {
+                    cInput.requestFocus();
+                    return true;
+                }
+                return false;
+            }
+        });
+        // Clicks the calculate button if the user presses done on the keyboard
+        cInput.setOnEditorActionListener(new EditText.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                if (actionId == EditorInfo.IME_ACTION_DONE) {
+                    calc.performClick();
+                    return true;
+                }
+                return false;
+            }
         });
     }
 

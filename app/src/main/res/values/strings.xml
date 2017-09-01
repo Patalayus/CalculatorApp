@@ -3,4 +3,6 @@
     <string name="entervaluehint">Enter your first number here</string>
     <string name="title_activity_qformula">Quadratic Formula</string>
     <string name="button_circle">send</string>
+    <string name="x1">null</string>
+    <string name="x2">null</string>
 </resources>
