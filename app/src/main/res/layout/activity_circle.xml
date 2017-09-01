@@ -21,36 +21,6 @@
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
-    <Button
-        android:id="@+id/calculateButton_ID"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="RadiusCalculation"
-        android:text="calculate area" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Work out area of a circle."
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:src="@drawable/areaofacircle2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/areaofacircle2"
-        android:layout_weight="0.27" />
-
-    <EditText
-        android:id="@+id/radius_text2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Enter your radius here"
-        android:inputType="number|numberSigned|numberDecimal" />
-
     <TextView
         android:id="@+id/output_text2"
         android:layout_width="match_parent"
@@ -58,11 +28,19 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <Button
-        android:id="@+id/calculateButton_ID2"
+        android:id="@+id/calculateButton_ID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="RadiusCalculation"
-        android:text="calculate circumference" />
+        android:text="calculate area and circumference" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/areaofacircle2"
+        app:srcCompat="@drawable/areaofacircle2"
+        android:layout_weight="0.05" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -70,6 +48,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/circumferenceofacircle"
-        android:layout_weight="0.20" />
+        android:layout_weight="0.05" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" work out area and circumference of a circle."
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
 </LinearLayout>

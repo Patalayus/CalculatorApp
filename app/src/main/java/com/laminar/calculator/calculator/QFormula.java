@@ -23,7 +23,6 @@ public class QFormula extends AppCompatActivity {
 
     double a, b, c;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

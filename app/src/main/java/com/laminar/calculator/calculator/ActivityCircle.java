@@ -20,33 +20,30 @@ public class ActivityCircle extends Activity {
         public void RadiusCalculation(View a){
             //validation on entering radius
             EditText RadiusVariable = (EditText)findViewById(R.id.radius_text);
+
             if(RadiusVariable.length()==0){
                 Snackbar Reminder = Snackbar.make(a, "Please enter a number", Snackbar.LENGTH_LONG);
                 Reminder.show();
                 //show notification if user has not entered a number
-            }else if (a.getId() == R.id.calculateButton_ID)
+            }else if (a.getId() == R.id.calculateButton_ID){
             {
                 double ConvertedR = Double.parseDouble(RadiusVariable.getText().toString());
                 double RadHalf = ConvertedR * ConvertedR;
                 double RadComp = Math.PI * RadHalf;
+
+                double Circumference = 2 * Math.PI * Double.parseDouble(RadiusVariable.getText().toString());
+
                 TextView TextViewV = (TextView)findViewById(R.id.output_text);
-                TextViewV.setText(""+RadComp);
+                TextViewV.setText("Area: "+RadComp);
+                RadiusVariable.setText("");
+                //complete calculation, output it in the TextView and reset enter box
+
+                TextView TextViewV2 = (TextView)findViewById(R.id.output_text2);
+                TextViewV2.setText("Circumference: "+Circumference);
                 RadiusVariable.setText("");
                 //complete calculation, output it in the TextView and reset enter box
             }
-            EditText RadiusVariable2 = (EditText)findViewById(R.id.radius_text2);
-            if(RadiusVariable2.length()==0){
-                Snackbar Reminder = Snackbar.make(a, "Please enter a number", Snackbar.LENGTH_LONG);
-                Reminder.show();
-            }else if (a.getId() == R.id.calculateButton_ID2)
-            {
-                double Circumference = 2 * Math.PI * Double.parseDouble(RadiusVariable2.getText().toString());
-                TextView TextViewV2 = (TextView)findViewById(R.id.output_text2);
-                TextViewV2.setText(""+Circumference);
-                RadiusVariable2.setText("");
-                //complete calculation, output it in the TextView and reset enter box
-            }
     }
-}
+}}
 
 
