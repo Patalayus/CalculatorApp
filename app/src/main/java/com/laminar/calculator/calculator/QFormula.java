@@ -45,8 +45,19 @@ public class QFormula extends AppCompatActivity {
                     enternum.show();
                 } else {
                     a = Double.parseDouble(aInput.getText().toString());
-                    b = Double.parseDouble(aInput.getText().toString());
-                    c = Double.parseDouble(aInput.getText().toString());
+                    b = Double.parseDouble(bInput.getText().toString());
+                    c = Double.parseDouble(cInput.getText().toString());
+                    double enps_MINUSb = -b;
+                    double enPS_FourTimesaTimesc = 4*(a*c);
+                    double enps_BSquared = b*b;
+                    double comparison_ = enps_BSquared - enPS_FourTimesaTimesc;
+                    double enps_MinusBPlusTheSquareRootofBSquaredMinus4TimesATimesC = enps_MINUSb+Math.sqrt(enps_BSquared - enPS_FourTimesaTimesc);
+                    double enps_MinusBMinusTheSquareRootofBSquaredMinus4TimesATimesC = enps_MINUSb-Math.sqrt(enps_BSquared - enPS_FourTimesaTimesc);
+                    double enps_totalPOSITIVE = enps_MinusBPlusTheSquareRootofBSquaredMinus4TimesATimesC / 2*a;
+                    double enps_totalNEGATIVE = enps_MinusBMinusTheSquareRootofBSquaredMinus4TimesATimesC / 2*a;
+                        x1.setText(""+enps_totalNEGATIVE);
+                        x2.setText(""+enps_totalPOSITIVE);
+                    //}
                 }
             }
 
