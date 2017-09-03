@@ -124,6 +124,13 @@
         android:text="Quadratic Formula" />
 
     <Button
+        android:id="@+id/young_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClick2"
+        android:text="Young's Modulus" />
+
+    <Button
         android:id="@+id/circle_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

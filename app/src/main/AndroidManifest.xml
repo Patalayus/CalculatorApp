@@ -28,7 +28,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.laminar.calculator.calculator.MainActivity" />
         </activity>
-        <activity android:name=".ActivityCircle"></activity>
+        <activity android:name=".ActivityCircle" />
+        <activity android:name=".YoungsModulus"></activity>
     </application>
 
 </manifest>

@@ -13,13 +13,14 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import static com.laminar.calculator.calculator.R.id.circle_button;
+import static com.laminar.calculator.calculator.R.id.young_id;
 
 
 public class MainActivity extends AppCompatActivity {
 
     TextView result;
     EditText Number1;
-    Button add, subtract,divide, multiply, power, calculate, percentage, qformula, circle_class;
+    Button add, subtract,divide, multiply, power, calculate, percentage, qformula, circle_class, youngclass;
 
     double enps_result;
     //premative float variable
@@ -50,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
         percentage = (Button)findViewById(R.id.percentage);
         qformula = (Button)findViewById(R.id.qformula);
         circle_class = (Button)findViewById(circle_button);
+        youngclass = (Button)findViewById(young_id);
 
 
 
@@ -166,6 +168,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
         // Clicks the calculate button if the user presses done on the keyboard
         Number1.setOnEditorActionListener(new EditText.OnEditorActionListener() {
             @Override
@@ -177,6 +180,7 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
+
         qformula.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
@@ -184,11 +188,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });}
 
+
+
     public void onButtonClick(View v){
         if(v.getId()==R.id.circle_button) {
             Intent i = new Intent(MainActivity.this, ActivityCircle.class);
             startActivity(i);
         }}
+    public void onButtonClick2(View v){
+        if(v.getId()==R.id.young_id) {
+            Intent i2 = new Intent(MainActivity.this, YoungsModulus.class);
+            startActivity(i2);
+        }}
+
 
     public void operationHandle(View v, int optype){
         if(Number1.length()==0){
