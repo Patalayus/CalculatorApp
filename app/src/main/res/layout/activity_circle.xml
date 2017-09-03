@@ -39,16 +39,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/areaofacircle2"
-        app:srcCompat="@drawable/areaofacircle2"
-        android:layout_weight="0.05" />
+        app:srcCompat="@drawable/areaofacircle2" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:src="@drawable/circumferenceofacircle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/circumferenceofacircle"
-        android:layout_weight="0.05" />
+        app:srcCompat="@drawable/circumferenceofacircle" />
 
     <TextView
         android:id="@+id/textView"
