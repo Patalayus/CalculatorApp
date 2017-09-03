@@ -19,6 +19,8 @@ public class YoungsModulus extends AppCompatActivity {
         setContentView(R.layout.activity_youngs_modulus);
     }
     public void YoungsCalculation(View a){
+        double force_v, area_v, change_v, length_v;
+
         EditText force;
         EditText area;
         EditText changelength;
@@ -29,8 +31,18 @@ public class YoungsModulus extends AppCompatActivity {
         changelength = (EditText)findViewById(R.id.DeltaL_ID);
         length = (EditText)findViewById(R.id.L_ID);
 
+        if(force.length()==0||area.length()==0||changelength.length()==0||length.length()==0){
+            Snackbar snackbar = Snackbar.make(a, "Please enter 3 numbers", Snackbar.LENGTH_LONG);
+            snackbar.show();
+        }
+        else{
+            force_v = Double.parseDouble(force.getText().toString());
+            area_v = Double.parseDouble(area.getText().toString());
+            change_v = Double.parseDouble(changelength.getText().toString());
+            length_v = Double.parseDouble(length.getText().toString());
 
 
+        }
     }
 }
 
