@@ -18,39 +18,35 @@
             android:id="@+id/forceid"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number"
             android:ems="10"
-            android:text="Enter your force in newtons (N)" />
+            android:inputType="numberDecimal" />
 
         <EditText
             android:id="@+id/A_ID"
-            android:inputType="number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:text="Enter your area in square meters (m^2)" />
+            android:inputType="numberDecimal" />
 
         <EditText
             android:id="@+id/DeltaL_ID"
-            android:inputType="number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:text="Enter your change in length in meters (m)" />
+            android:inputType="numberDecimal" />
 
         <EditText
             android:id="@+id/L_ID"
-            android:inputType="number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:text="Enter your original length in meters (m)" />
+            android:inputType="numberDecimal" />
 
         <TextView
             android:id="@+id/idofoutput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
+            android:text="Young's Modulus Total."
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <Button
@@ -65,15 +61,15 @@
             android:src="@drawable/youngmodulus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/youngmodulus" />
+            app:srcCompat="@drawable/youngmodulus"
+            android:layout_weight="0.77" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/bracket"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            tools:text="Work out Young's Modulus of an object." />
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
