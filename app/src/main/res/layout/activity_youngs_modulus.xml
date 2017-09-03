@@ -18,43 +18,43 @@
             android:id="@+id/forceid"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="number"
             android:ems="10"
-            android:inputType="textPersonName"
             android:text="Enter your force in newtons (N)" />
 
         <EditText
             android:id="@+id/A_ID"
+            android:inputType="number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
             android:text="Enter your area in square meters (m^2)" />
 
         <EditText
             android:id="@+id/DeltaL_ID"
+            android:inputType="number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
             android:text="Enter your change in length in meters (m)" />
 
         <EditText
             android:id="@+id/L_ID"
+            android:inputType="number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
             android:text="Enter your original length in meters (m)" />
 
         <TextView
-            android:id="@+id/E_ID"
+            android:id="@+id/idofoutput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView"
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <Button
-            android:id="@+id/calculate_ID"
+            android:id="@+id/calculation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="YoungsCalculation"

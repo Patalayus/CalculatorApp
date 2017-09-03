@@ -19,14 +19,11 @@ public class YoungsModulus extends AppCompatActivity {
         setContentView(R.layout.activity_youngs_modulus);
     }
     public void YoungsCalculation(View a){
-        double force_v, area_v, change_v, length_v;
+        double force_v, area_v, change_v, length_v, youngs;
 
-        EditText force;
-        EditText area;
-        EditText changelength;
-        EditText length;
+        EditText force, area, changelength, length;
 
-        force = (EditText)findViewById(R.id.F_ID);
+        force = (EditText)findViewById(R.id.forceid);
         area = (EditText)findViewById(R.id.A_ID);
         changelength = (EditText)findViewById(R.id.DeltaL_ID);
         length = (EditText)findViewById(R.id.L_ID);
@@ -35,14 +32,11 @@ public class YoungsModulus extends AppCompatActivity {
             Snackbar snackbar = Snackbar.make(a, "Please enter 3 numbers", Snackbar.LENGTH_LONG);
             snackbar.show();
         }
-        else{
-            force_v = Double.parseDouble(force.getText().toString());
-            area_v = Double.parseDouble(area.getText().toString());
-            change_v = Double.parseDouble(changelength.getText().toString());
-            length_v = Double.parseDouble(length.getText().toString());
-
-
+        else if(a.getId() == R.id.calculation){
+            TextView outputtext = (TextView)findViewById(R.id.idofoutput);
+            youngs = (Double.parseDouble(force.getText().toString())/Double.parseDouble(area.getText().toString()))
+                    /(Double.parseDouble(changelength.getText().toString())/Double.parseDouble(length.getText().toString()));
+            outputtext.setText("Young's Modulus: "+youngs);
         }
     }
 }
-
