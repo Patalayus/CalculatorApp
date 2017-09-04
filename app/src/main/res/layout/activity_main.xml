@@ -54,7 +54,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@android:color/holo_red_light"
+            android:background="?android:attr/colorButtonNormal"
             android:text="+" />
 
         <Button
@@ -62,7 +62,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="?android:attr/colorFocusedHighlight"
+            android:background="?android:attr/colorButtonNormal"
             android:text="-" />
 
         <Button
@@ -70,7 +70,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="?android:attr/colorPressedHighlight"
+            android:background="?android:attr/colorButtonNormal"
             android:text="×" />
 
         <Button
@@ -78,7 +78,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@android:color/holo_green_dark"
+            android:background="?attr/colorButtonNormal"
             android:text="÷" />
 
         <Button
@@ -86,7 +86,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@android:color/holo_blue_dark"
+            android:background="?attr/colorButtonNormal"
             android:text="^" />
 
         <Button
@@ -94,7 +94,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@android:color/holo_purple"
+            android:background="?attr/colorButtonNormal"
             android:text="%" />
 
     </LinearLayout>
