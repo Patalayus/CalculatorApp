@@ -200,8 +200,12 @@ public class MainActivity extends AppCompatActivity {
             Intent i2 = new Intent(MainActivity.this, YoungsModulus.class);
             startActivity(i2);
         }}
-
-
+    public void suvaton(View v){
+        if(v.getId()==R.id.suvatid){
+            Intent getsuvat = new Intent(MainActivity.this, activity_suvat.class);
+            startActivity(getsuvat);
+        }
+    }
     public void operationHandle(View v, int optype){
         if(Number1.length()==0){
             if (current_op != 0) {

@@ -143,6 +143,13 @@
         android:onClick="onButtonClick"
         android:text="Area or circumference of a circle" />
 
+    <Button
+        android:id="@+id/suvatid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="suvaton"
+        android:text="SUVAT" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"

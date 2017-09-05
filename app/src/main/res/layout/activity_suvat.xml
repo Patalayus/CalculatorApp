@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.laminar.calculator.calculator.activity_suvat"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please choose a SUVAT equation"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/suvat1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="v=u+at" />
+
+        <Button
+            android:id="@+id/suvat2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="s=u*t+1/2*at^2" />
+
+        <Button
+            android:id="@+id/suvat3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="s=1/2*(u+v)*t" />
+
+        <Button
+            android:id="@+id/suvat4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="v^2=u^2+2*as" />
+
+        <Button
+            android:id="@+id/suvat5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" s=vt-1/2*at^2" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="363dp"
+            android:layout_height="216dp"
+            app:srcCompat="@drawable/suvatequations" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

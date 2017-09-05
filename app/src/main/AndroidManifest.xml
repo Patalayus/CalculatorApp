@@ -29,7 +29,8 @@
                 android:value="com.laminar.calculator.calculator.MainActivity" />
         </activity>
         <activity android:name=".ActivityCircle" />
-        <activity android:name=".YoungsModulus"></activity>
+        <activity android:name=".YoungsModulus" />
+        <activity android:name=".activity_suvat"></activity>
     </application>
 
 </manifest>
