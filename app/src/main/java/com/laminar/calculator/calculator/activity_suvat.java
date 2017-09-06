@@ -1,5 +1,6 @@
 package com.laminar.calculator.calculator;
 
+import android.content.Intent;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,6 +17,10 @@ public class activity_suvat extends AppCompatActivity {
 
     public void v_uat(View a) {
         //when first suvat button is pressed
+        if(a.getId()==R.id.suvat1){
+            Intent v_uatIntent = new Intent(activity_suvat.this, v_uat_activity.class);
+            startActivity(v_uatIntent);
+        }
     }
 
     public void sutat(View a) {
@@ -33,8 +38,6 @@ public class activity_suvat extends AppCompatActivity {
     public void svtat(View a) {
         //when first suvat button is pressed
     }
-
-
     }
 
 

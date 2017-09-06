@@ -5,4 +5,9 @@
     <string name="button_circle">send</string>
     <string name="x1">null</string>
     <string name="x2">null</string>
+    <string name="title_activity_v_uat_activity">v_uat_activity</string>
+    <string name="title_activity_sutat_activity">sutat_activity</string>
+    <string name="title_activity_suvt_activity">suvt_activity</string>
+    <string name="title_activity_vuas_activity">vuas_activity</string>
+    <string name="title_activity_svtat_activity">svtat_activity</string>
 </resources>

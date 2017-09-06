@@ -30,7 +30,27 @@
         </activity>
         <activity android:name=".ActivityCircle" />
         <activity android:name=".YoungsModulus" />
-        <activity android:name=".activity_suvat"></activity>
+        <activity android:name=".activity_suvat" />
+        <activity
+            android:name=".v_uat_activity"
+            android:label="@string/title_activity_v_uat_activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".sutat_activity"
+            android:label="@string/title_activity_sutat_activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".suvt_activity"
+            android:label="@string/title_activity_suvt_activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".vuas_activity"
+            android:label="@string/title_activity_vuas_activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".svtat_activity"
+            android:label="@string/title_activity_svtat_activity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
