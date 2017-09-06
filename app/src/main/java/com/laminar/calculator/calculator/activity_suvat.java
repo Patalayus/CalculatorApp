@@ -24,18 +24,34 @@ public class activity_suvat extends AppCompatActivity {
     }
     public void sutat(View a) {
         //when first sutat button is pressed
+        if(a.getId()==R.id.suvat2){
+            Intent v_uatIntent1 = new Intent(activity_suvat.this, sutat_activity.class);
+            startActivity(v_uatIntent1);
+        }
     }
 
     public void suvt(View a) {
         //when first suvt button is pressed
+        if(a.getId()==R.id.suvat3){
+            Intent v_uatIntent2 = new Intent(activity_suvat.this, suvt_activity.class);
+            startActivity(v_uatIntent2);
+        }
     }
 
     public void vuas(View a) {
         //when first vuas button is pressed
+        if(a.getId()==R.id.suvat4){
+            Intent v_uatIntent3 = new Intent(activity_suvat.this, vuas_activity.class);
+            startActivity(v_uatIntent3);
+        }
     }
 
     public void svtat(View a) {
         //when first svtat button is pressed
+        if(a.getId()==R.id.suvat5){
+            Intent v_uatIntent4 = new Intent(activity_suvat.this, svtat_activity.class);
+            startActivity(v_uatIntent4);
+        }
     }
     }
 
