@@ -48,53 +48,52 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.03"
-            android:text="                          V = U + AT "
+            android:text="                           V = U + AT "
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/initial_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Please enter your initial velocity." />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.06" />
+            android:hint="Please enter your initial velocity  (ms^-1)"
+            android:inputType="number|numberSigned|numberDecimal" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/area_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Please enter your area." />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.06" />
+            android:hint="Please enter your area. (ms^-2)"
+            android:inputType="number|numberSigned|numberDecimal" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/time_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Please enter your time." />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.08" />
+            android:hint="Please enter your time. (s)"
+            android:inputType="number|numberSigned|numberDecimal" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/velocity_calculation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Calculate velocity" />
+            android:onClick="onClickVelocity"
+            android:text="Calculate Final velocity" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10" />
+
+        <TextView
+            android:id="@+id/VelocityOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.07"
+            android:text="Total"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
     </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>

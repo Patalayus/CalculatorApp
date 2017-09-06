@@ -22,21 +22,20 @@ public class activity_suvat extends AppCompatActivity {
             startActivity(v_uatIntent);
         }
     }
-
     public void sutat(View a) {
-        //when first suvat button is pressed
+        //when first sutat button is pressed
     }
 
     public void suvt(View a) {
-        //when first suvat button is pressed
+        //when first suvt button is pressed
     }
 
     public void vuas(View a) {
-        //when first suvat button is pressed
+        //when first vuas button is pressed
     }
 
     public void svtat(View a) {
-        //when first suvat button is pressed
+        //when first svtat button is pressed
     }
     }
 
