@@ -40,6 +40,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_weight="0.20"
         android:orientation="vertical"
         android:weightSum="1">
 
@@ -83,7 +84,7 @@
             android:id="@+id/finalvelocity_ID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onClickVelocity"
+            android:onClick="onPressExecute"
             android:text="Calculate Final velocity" />
 
         <Space
@@ -93,7 +94,7 @@
             android:layout_weight="0.10" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/outputtextshsh"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Total"
