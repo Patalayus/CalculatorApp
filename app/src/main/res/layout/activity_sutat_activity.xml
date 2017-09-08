@@ -87,6 +87,7 @@
             android:text="Calculate Final velocity" />
 
         <Space
+            android:id="@+id/output_total22"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.10" />
