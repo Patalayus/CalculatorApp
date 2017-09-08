@@ -56,7 +56,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/initialvelocityid"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -64,7 +64,7 @@
             android:inputType="number|numberSigned|numberDecimal" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/area2id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -72,7 +72,7 @@
             android:inputType="number|numberSigned|numberDecimal" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/time2is"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -80,7 +80,7 @@
             android:inputType="number|numberSigned|numberDecimal" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/finalvelocity_ID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onClickVelocity"
