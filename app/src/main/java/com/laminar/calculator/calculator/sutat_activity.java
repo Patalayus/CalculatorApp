@@ -44,7 +44,7 @@ public class sutat_activity extends AppCompatActivity {
             double enps_end = (enps_areaid1*enps_time1id)*(enps_areaid1*enps_time1id);
             double enps_total22 = enps_UmultT+0.5*enps_end;
             TextView enps_total222 = (TextView)findViewById(R.id.outputtextshsh);
-            enps_total222.setText("Your total is "+enps_total22);
+            enps_total222.setText("Your total is "+enps_total22+"m");
 
         }
     }
