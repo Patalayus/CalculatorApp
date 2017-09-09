@@ -47,8 +47,8 @@
             android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            tools:text="                         S = 1/2 * ( U + V ) * T" />
+            android:text="                 S = 1/2 * ( U + V ) * T"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <EditText
             android:id="@+id/Initial_ID"
@@ -86,7 +86,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.09"
-            android:text="TextView"
+            android:text="Total."
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             tools:text="Total." />
 
