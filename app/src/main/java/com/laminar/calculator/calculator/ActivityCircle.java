@@ -31,7 +31,11 @@ public class ActivityCircle extends Activity {
                 double RadHalf = ConvertedR * ConvertedR;
                 double RadComp = Math.PI * RadHalf;
 
+                double volume_sphere = 1.333*Math.PI*(ConvertedR*ConvertedR*ConvertedR);
+
                 double Circumference = 2 * Math.PI * Double.parseDouble(RadiusVariable.getText().toString());
+
+
 
                 TextView TextViewV = (TextView)findViewById(R.id.output_text);
                 TextViewV.setText("Area: "+RadComp);
@@ -42,6 +46,11 @@ public class ActivityCircle extends Activity {
                 TextViewV2.setText("Circumference: "+Circumference);
                 RadiusVariable.setText("");
                 //complete calculation, output it in the TextView and reset enter box
+
+                TextView TextViewV3 = (TextView)findViewById(R.id.output_text3);
+                TextViewV3.setText("Volume of Sphere: "+volume_sphere);
+                RadiusVariable.setText("");
+                //complete sphere calculation
             }
     }
 }}
