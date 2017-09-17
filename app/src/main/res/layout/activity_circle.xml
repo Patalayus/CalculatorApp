@@ -32,7 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="RadiusCalculation"
-        android:text="calculate area and circumference" />
+        android:text="calculate" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -48,11 +48,17 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/circumferenceofacircle" />
 
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/volumeofasphere" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=" work out area and circumference of a circle."
+        android:text=" work out area and circumference of a circle as well as volume of a sphere."
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
 </LinearLayout>
