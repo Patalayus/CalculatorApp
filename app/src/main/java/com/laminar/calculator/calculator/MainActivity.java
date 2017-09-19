@@ -2,6 +2,7 @@ package com.laminar.calculator.calculator;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
@@ -17,6 +18,7 @@ import static com.laminar.calculator.calculator.R.id.young_id;
 
 
 public class MainActivity extends AppCompatActivity {
+    private static int SPLASH_TIME_OUT = 3000;
 
     TextView result;
     EditText Number1;
@@ -34,7 +36,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
+
         super.onCreate(savedInstanceState);
+
+
         setContentView(R.layout.activity_main);
 
 
