@@ -144,6 +144,13 @@
         android:text="Area or circumference of a circle and volume of a sphere" />
 
     <Button
+        android:id="@+id/GPEID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="GPE"
+        android:text="change in gravitational potential energy" />
+
+    <Button
         android:id="@+id/suvatid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -10,4 +10,5 @@
     <string name="title_activity_suvt_activity">suvt_activity</string>
     <string name="title_activity_vuas_activity">vuas_activity</string>
     <string name="title_activity_svtat_activity">svtat_activity</string>
+    <string name="title_activity_gravitationalpotential">gravitationalpotential</string>
 </resources>

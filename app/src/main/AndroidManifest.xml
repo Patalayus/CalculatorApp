@@ -51,7 +51,11 @@
             android:name=".svtat_activity"
             android:label="@string/title_activity_svtat_activity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".HomeActivity" />
+        <activity
+            android:name=".gravitationalpotential"
+            android:label="@string/title_activity_gravitationalpotential"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

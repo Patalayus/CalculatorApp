@@ -211,6 +211,12 @@ public class MainActivity extends AppCompatActivity {
             startActivity(getsuvat);
         }
     }
+    public void GPE(View v){
+        if(v.getId()==R.id.GPEID){
+            Intent roomgpe = new Intent(MainActivity.this, gravitationalpotential.class);
+            startActivity(roomgpe);
+        }
+    }
     public void operationHandle(View v, int optype){
         if(Number1.length()==0){
             if (current_op != 0) {
