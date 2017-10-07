@@ -24,37 +24,44 @@
             android:textAppearance="@android:style/TextAppearance.Material.Large" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/massid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
             android:hint="Enter your mass (kg)"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
             android:inputType="number|numberSigned|numberDecimal" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/strengthid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
             android:hint="Enter your gravitational field strength (N)"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
             android:inputType="number|numberSigned|numberDecimal" />
 
         <EditText
-            android:id="@+id/editText3"
-            android:hint="enter your height (m)"
+            android:id="@+id/heightid"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="enter your height (m)"
             android:inputType="number|numberSigned|numberDecimal" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/calc_gpeid"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="GPEACT"
             android:text="calculate" />
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/sda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+        <TextView
+            android:id="@+id/exs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Work out change in gravitational potential energy"

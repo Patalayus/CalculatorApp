@@ -31,15 +31,15 @@ public class svtat_activity extends AppCompatActivity {
         EditText time = (EditText)findViewById(R.id.timea);
         EditText area = (EditText)findViewById(R.id.areaz);
 
-        double finalvel2 = Double.parseDouble(finalvel.getText().toString());
-        double time1 = Double.parseDouble(time.getText().toString());
-        double area1 = Double.parseDouble(area.getText().toString());
 
         if(finalvel.length()==0||time.length()==0||area.length()==0){
             Snackbar.make(a, "Please enter your values into the equation", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show();
         }else{
             //S = V T - 1/2 * A T ^2
+            double finalvel2 = Double.parseDouble(finalvel.getText().toString());
+            double time1 = Double.parseDouble(time.getText().toString());
+            double area1 = Double.parseDouble(area.getText().toString());
             double enps_VT = finalvel2 * time1;
             double enps_AT2 = (area1*time1)*(area1*time1);
             double enps_rest = 0.5*enps_AT2;

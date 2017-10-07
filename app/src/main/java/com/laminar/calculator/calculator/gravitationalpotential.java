@@ -27,28 +27,24 @@ public class gravitationalpotential extends AppCompatActivity {
             }
         });
     }
-    public void AllWorkAndNoPlay(View a){
-        EditText finalvel = (EditText)findViewById(R.id.finalvelo);
-        EditText time = (EditText)findViewById(R.id.timea);
-        EditText area = (EditText)findViewById(R.id.areaz);
+    public void GPEACT(View a){
+        EditText massdec = (EditText)findViewById(R.id.massid);
+        EditText strengthdec = (EditText)findViewById(R.id.strengthid);
+        EditText heightdec = (EditText)findViewById(R.id.heightid);
 
-        double finalvel2 = Double.parseDouble(finalvel.getText().toString());
-        double time1 = Double.parseDouble(time.getText().toString());
-        double area1 = Double.parseDouble(area.getText().toString());
 
-        if(finalvel.length()==0||time.length()==0||area.length()==0){
+        if(massdec.length()==0||strengthdec.length()==0||heightdec.length()==0){
             Snackbar.make(a, "Please enter your values into the equation", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show();
         }else{
-            //S = V T - 1/2 * A T ^2
-            double enps_VT = finalvel2 * time1;
-            double enps_AT2 = (area1*time1)*(area1*time1);
-            double enps_rest = 0.5*enps_AT2;
+            //E = mgh
+            double conmass = Double.parseDouble(massdec.getText().toString());
+            double constrength = Double.parseDouble(strengthdec.getText().toString());
+            double conheight = Double.parseDouble(heightdec.getText().toString());
 
-            double variabletotal = enps_VT - enps_rest;
-
-            TextView enps_total4all = (TextView)findViewById(R.id.textView10);
-            enps_total4all.setText("Your total is "+variabletotal+"m");
+            double enps_TOTGPE = conmass * constrength * conheight;
+            TextView enps_out1 = (TextView)findViewById(R.id.sda);
+            enps_out1.setText("Your total is "+enps_TOTGPE);
 
         }
     }
