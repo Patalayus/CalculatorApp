@@ -55,7 +55,8 @@
         <activity
             android:name=".gravitationalpotential"
             android:label="@string/title_activity_gravitationalpotential"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RefractiveIndex"></activity>
     </application>
 
 </manifest>

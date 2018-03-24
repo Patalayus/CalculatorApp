@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView result;
     EditText Number1;
-    Button add, subtract,divide, multiply, power, calculate, percentage, qformula, circle_class, youngclass;
+    Button add, subtract,divide, multiply, power, calculate, percentage, qformula, circle_class, youngclass, classrefract;
 
     double enps_result;
     //premative float variable
@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         qformula = (Button)findViewById(R.id.qformula);
         circle_class = (Button)findViewById(circle_button);
         youngclass = (Button)findViewById(young_id);
+        classrefract = (Button)findViewById(R.id.refractID);
 
 
 
@@ -214,6 +215,12 @@ public class MainActivity extends AppCompatActivity {
         if(v.getId()==R.id.GPEID){
             Intent roomgpe = new Intent(MainActivity.this, gravitationalpotential.class);
             startActivity(roomgpe);
+        }
+    }
+    public void refractGO(View v){
+        if(v.getId()==R.id.refractID){
+            Intent gorefract = new Intent(MainActivity.this, RefractiveIndex.class);
+            startActivity(gorefract);
         }
     }
     public void operationHandle(View v, int optype){
