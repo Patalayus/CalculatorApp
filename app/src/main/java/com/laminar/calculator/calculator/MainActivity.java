@@ -173,7 +173,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         // Clicks the calculate button if the user presses done on the keyboard
         Number1.setOnEditorActionListener(new EditText.OnEditorActionListener() {
             @Override
