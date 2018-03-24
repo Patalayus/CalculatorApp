@@ -16,11 +16,16 @@
         tools:layout_editor_absoluteY="8dp"
         android:weightSum="1">
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.12" />
+
         <TextView
             android:id="@+id/textView12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="                         E = m g h"
+            android:text="                              E = m g h"
             android:textAppearance="@android:style/TextAppearance.Material.Large" />
 
         <EditText
@@ -47,6 +52,12 @@
             android:hint="enter your height (m)"
             android:inputType="number|numberSigned|numberDecimal" />
 
+        <TextView
+            android:id="@+id/sda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
         <Button
             android:id="@+id/calc_gpeid"
             android:layout_width="match_parent"
@@ -55,16 +66,11 @@
             android:text="calculate" />
 
         <TextView
-            android:id="@+id/sda"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
-
-        <TextView
             android:id="@+id/exs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Work out change in gravitational potential energy"
             android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

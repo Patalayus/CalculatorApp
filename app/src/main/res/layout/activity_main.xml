@@ -51,57 +51,57 @@
 
         <Button
             android:id="@+id/sumof"
-            android:textSize="30sp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="?android:attr/colorButtonNormal"
-            android:text="+" />
+            android:text="+"
+            android:textSize="30sp" />
 
         <Button
             android:id="@+id/subtract"
-            android:textSize="30sp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="?android:attr/colorButtonNormal"
-            android:text="-" />
+            android:text="-"
+            android:textSize="30sp" />
 
         <Button
             android:id="@+id/bleh"
-            android:textSize="30sp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="?android:attr/colorButtonNormal"
-            android:text="×" />
+            android:text="×"
+            android:textSize="30sp" />
 
         <Button
             android:id="@+id/divide"
-            android:textSize="30sp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="?attr/colorButtonNormal"
-            android:text="÷" />
+            android:text="÷"
+            android:textSize="30sp" />
 
         <Button
             android:id="@+id/Power"
             android:layout_width="0dp"
-            android:textSize="30sp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="?attr/colorButtonNormal"
-            android:text="^" />
+            android:text="^"
+            android:textSize="30sp" />
 
         <Button
             android:id="@+id/percentage"
             android:layout_width="0dp"
-            android:textSize="30sp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="?attr/colorButtonNormal"
-            android:text="%" />
+            android:text="%"
+            android:textSize="30sp" />
 
     </LinearLayout>
 
@@ -118,44 +118,72 @@
         android:background="@color/colorPrimary"
         android:text="Calculate" />
 
-    <Space
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.18" />
+        android:layout_height="181dp"
+        android:layout_weight="0.21"
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/qformula"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Quadratic Formula" />
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fillViewport="true">
 
-    <Button
-        android:id="@+id/young_id"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="onButtonClick2"
-        android:text="Young's Modulus" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-    <Button
-        android:id="@+id/circle_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="onButtonClick"
-        android:text="Area or circumference of a circle and volume of a sphere" />
+                <Button
+                    android:id="@+id/qformula"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Quadratic Formula" />
 
-    <Button
-        android:id="@+id/GPEID"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="GPE"
-        android:text="change in gravitational potential energy" />
+                <Button
+                    android:id="@+id/young_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onButtonClick2"
+                    android:text="Young's Modulus" />
 
-    <Button
-        android:id="@+id/suvatid"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="suvaton"
-        android:text="SUVAT" />
+                <Button
+                    android:id="@+id/circle_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onButtonClick"
+                    android:text="Area or circumference of a circle and volume of a sphere" />
+
+                <Button
+                    android:id="@+id/GPEID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="GPE"
+                    android:text="change in gravitational potential energy" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Button" />
+
+                <Button
+                    android:id="@+id/suvatid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="suvaton"
+                    android:text="SUVAT" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView2"
