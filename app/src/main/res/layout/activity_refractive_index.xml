@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint='Please enter your "i" here'
-            android:inputType="textPersonName" />
+            android:inputType="number|numberSigned|numberDecimal"  />
 
         <EditText
             android:id="@+id/rID"
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint='Please enter your "r" here'
-            android:inputType="textPersonName" />
+            android:inputType="number|numberSigned|numberDecimal"  />
 
         <Button
             android:id="@+id/calculateID"
