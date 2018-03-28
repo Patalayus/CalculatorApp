@@ -11,4 +11,5 @@
     <string name="title_activity_vuas_activity">vuas_activity</string>
     <string name="title_activity_svtat_activity">svtat_activity</string>
     <string name="title_activity_gravitationalpotential">gravitationalpotential</string>
+    <string name="title_activity_location">Location</string>
 </resources>
