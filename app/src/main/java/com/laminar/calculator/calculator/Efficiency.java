@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -17,10 +18,10 @@ public class Efficiency extends AppCompatActivity {
         //setSupportActionBar(toolbar);
 
     }
-    public void workout(View a){
+    public void go(View a){
         EditText EO = (EditText)findViewById(R.id.energyoutput);
         EditText EI = (EditText)findViewById(R.id.energyinput);
-        TextView VIEW = (TextView)findViewById(R.id.textView15);
+        Button make = (Button)findViewById(R.id.workout);
 
         if(EO.length()==0||EI.length()==0){
             Snackbar.make(a, "Please enter your values into the equation", Snackbar.LENGTH_LONG)
@@ -32,6 +33,7 @@ public class Efficiency extends AppCompatActivity {
             double stage1 = oe / ei;
             double stage2 = stage1 * 100;
 
+            TextView VIEW = (TextView)findViewById(R.id.textView15);
             VIEW.setText("Efficiency: "+stage2+"J");
         }
     }
