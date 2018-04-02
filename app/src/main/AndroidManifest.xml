@@ -62,7 +62,10 @@
             android:label="@string/title_activity_location"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".VoltageWattageCurrent" />
-        <activity android:name=".Efficiency"></activity>
+        <activity android:name=".Efficiency" />
+        <activity android:name=".wattage" />
+        <activity android:name=".amperage" />
+        <activity android:name=".voltage"></activity>
     </application>
 
 </manifest>

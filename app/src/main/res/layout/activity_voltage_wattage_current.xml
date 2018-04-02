@@ -21,21 +21,27 @@
             android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/wattageID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Wattage" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/amperageID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Amperage" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/voltageID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Voltage" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="match_parent"
+            android:layout_height="186dp"
+            app:srcCompat="@drawable/equation" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
