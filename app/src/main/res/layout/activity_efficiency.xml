@@ -14,26 +14,38 @@
         android:text="Work out the efficiency of an object"
         android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 
+    <EditText
+        android:id="@+id/energyoutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter useful energy output here (J)"
+        android:inputType="number|numberSigned|numberDecimal" />
+
+    <EditText
+        android:id="@+id/energyinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter input energy here (J)"
+        android:inputType="number|numberSigned|numberDecimal" />
+
+    <Button
+        android:id="@+id/workout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/imageView11"
         android:layout_width="match_parent"
-        android:layout_height="107dp"
-        app:srcCompat="@drawable/efficiency" />
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Enter your work done here (J)"
-        android:inputType="number|numberSigned|numberDecimal" />
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Enter your work done here (J)"
-        android:inputType="number|numberSigned|numberDecimal" />
+        android:layout_height="87dp"
+        app:srcCompat="@drawable/efficiency2" />
 
 </LinearLayout>
