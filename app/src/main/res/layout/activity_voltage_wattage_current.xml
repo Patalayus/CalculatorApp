@@ -24,18 +24,21 @@
             android:id="@+id/wattageID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="wattageclick"
             android:text="Wattage" />
 
         <Button
             android:id="@+id/amperageID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="amerpageclick"
             android:text="Amperage" />
 
         <Button
             android:id="@+id/voltageID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="voltageclick"
             android:text="Voltage" />
 
         <ImageView
