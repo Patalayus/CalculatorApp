@@ -2,9 +2,7 @@ package com.laminar.calculator.calculator;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.design.widget.Snackbar;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.view.View;
@@ -22,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView result;
     EditText Number1;
-    Button add, subtract,divide, multiply, power, calculate, percentage, qformula, circle_class, youngclass, classrefract;
+    Button add, subtract,divide, multiply, power, calculate, percentage, qformula, circle_class, youngclass, classrefract, efficiency, WVA;
 
     double enps_result;
     //premative float variable
@@ -58,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
         circle_class = (Button)findViewById(circle_button);
         youngclass = (Button)findViewById(young_id);
         classrefract = (Button)findViewById(R.id.refractID);
+        efficiency = (Button)findViewById(R.id.efficiencyID);
+        WVA = (Button)findViewById(R.id.WAV);
 
 
 
@@ -221,6 +221,18 @@ public class MainActivity extends AppCompatActivity {
         if(v.getId()==R.id.refractID){
             Intent gorefract = new Intent(MainActivity.this, RefractiveIndex.class);
             startActivity(gorefract);
+        }
+    }
+    public void goEfficient(View v){
+        if(v.getId()==R.id.efficiencyID){
+            Intent goefficient = new Intent(MainActivity.this, Efficiency.class);
+            startActivity(goefficient);
+        }
+    }
+    public void gowav(View v){
+        if(v.getId()==R.id.WAV){
+            Intent goawv = new Intent(MainActivity.this, VoltageWattageCurrent.class);
+            startActivity(goawv);
         }
     }
     public void operationHandle(View v, int optype){

@@ -175,6 +175,22 @@
                     android:text="change in gravitational potential energy" />
 
                 <Button
+                    android:id="@+id/WAV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="gowav"
+                    android:text="Wattage, Voltage or Amperage" />
+
+                <Button
+                    android:id="@+id/efficiencyID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="goEfficient"
+                    android:text="Efficiency" />
+
+                <Button
                     android:id="@+id/suvatid"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
