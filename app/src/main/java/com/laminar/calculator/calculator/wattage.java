@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 public class wattage extends AppCompatActivity {
     EditText voltage, current;
+    TextView out;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +20,7 @@ public class wattage extends AppCompatActivity {
         current = (EditText)findViewById(R.id.editText2);
     }
 
-    public void workout(View a){
+    public void go(View a){
 
         if(voltage.length()==0||current.length()==0){
             Snackbar.make(a, "Please enter your values into the equation", Snackbar.LENGTH_LONG)
@@ -30,8 +31,8 @@ public class wattage extends AppCompatActivity {
             double conamperage = Double.parseDouble(current.getText().toString());
 
             double total = convoltage * conamperage;
-            TextView give = (TextView)findViewById(R.id.sda);
-            give.setText("Your total is "+total);
+            out = (TextView)findViewById(R.id.textView19);
+            out.setText("Your total is "+total+"W");
 
         }
     }

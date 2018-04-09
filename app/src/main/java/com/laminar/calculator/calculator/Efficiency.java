@@ -34,7 +34,7 @@ public class Efficiency extends AppCompatActivity {
             double stage2 = stage1 * 100;
 
             TextView VIEW = (TextView)findViewById(R.id.textView15);
-            VIEW.setText("Efficiency: "+stage2+"J");
+            VIEW.setText("Efficiency: "+stage2+"%");
         }
     }
 
