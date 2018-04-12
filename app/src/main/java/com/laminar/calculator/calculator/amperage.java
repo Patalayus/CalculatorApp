@@ -30,7 +30,7 @@ public class amperage extends AppCompatActivity {
             double conwattage = Double.parseDouble(wattage.getText().toString());
 
             double total = convoltage / conwattage;
-            answer.setText("Your total is "+total+"W");
+            answer.setText("Your total is "+total+"A");
 
         }
     }

@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Please enter your voltage here (V)"
-        android:inputType="textPersonName" />
+        android:inputType="number|numberSigned|numberDecimal" />
 
     <EditText
         android:id="@+id/wattageID"
@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Please enter your wattage (W)"
-        android:inputType="textPersonName" />
+        android:inputType="number|numberSigned|numberDecimal" />
 
     <TextView
         android:id="@+id/answerID"
