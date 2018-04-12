@@ -15,7 +15,7 @@
         android:textAppearance="@android:style/TextAppearance.Material.Large" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/voltageID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -23,7 +23,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/wattageID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -31,14 +31,15 @@
         android:inputType="textPersonName" />
 
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/answerID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/calculateID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="work"
         android:text="CALCULATE" />
 </LinearLayout>
