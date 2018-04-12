@@ -7,10 +7,33 @@
     android:orientation="vertical"
     tools:context=".voltage">
 
-    <TextView
-        android:id="@+id/textView18"
+    <EditText
+        android:id="@+id/wattageID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Coming version 0.2.4"
-        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+        android:ems="10"
+        android:hint="Please enter your wattage (W) "
+        android:inputType="number|numberSigned|numberDecimal" />
+
+    <EditText
+        android:id="@+id/amperageID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Please enter your amperage (A)"
+        android:inputType="number|numberSigned|numberDecimal" />
+
+    <TextView
+        android:id="@+id/answerID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <Button
+        android:id="@+id/calculateID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="dovoltage"
+        android:text="Calculate" />
+
 </LinearLayout>

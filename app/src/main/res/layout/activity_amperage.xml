@@ -7,13 +7,6 @@
     android:orientation="vertical"
     tools:context=".amperage">
 
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Coming version 0.2.4"
-        android:textAppearance="@android:style/TextAppearance.Material.Large" />
-
     <EditText
         android:id="@+id/voltageID"
         android:layout_width="match_parent"
