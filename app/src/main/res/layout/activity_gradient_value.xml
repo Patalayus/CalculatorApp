@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Please enter your Δy here."
-        android:inputType="textPersonName" />
+        android:inputType="number|numberSigned|numberDecimal" />
 
     <EditText
         android:id="@+id/Δx"
@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Please enter your Δx here."
-        android:inputType="textPersonName" />
+        android:inputType="number|numberSigned|numberDecimal" />
 
     <TextView
         android:id="@+id/answer"
