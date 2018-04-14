@@ -65,7 +65,8 @@
         <activity android:name=".Efficiency" />
         <activity android:name=".wattage" />
         <activity android:name=".amperage" />
-        <activity android:name=".voltage"></activity>
+        <activity android:name=".voltage" />
+        <activity android:name=".gradient_value"></activity>
     </application>
 
 </manifest>
