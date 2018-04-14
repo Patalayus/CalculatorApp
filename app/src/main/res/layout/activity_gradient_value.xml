@@ -8,7 +8,7 @@
     tools:context=".gradient_value">
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/Δy"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -16,7 +16,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/Δx"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -24,14 +24,21 @@
         android:inputType="textPersonName" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/answer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/calculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="run"
         android:text="calculate" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/slope" />
 </LinearLayout>
