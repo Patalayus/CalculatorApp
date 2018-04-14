@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView result;
     EditText Number1;
-    Button add, subtract,divide, multiply, power, calculate, percentage, qformula, circle_class, youngclass, classrefract, efficiency, WVA;
+    Button add, subtract,divide, multiply, power, calculate, percentage, qformula, circle_class, youngclass, classrefract, efficiency, WVA, gradient_value;
 
     double enps_result;
     //premative float variable
@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         classrefract = (Button)findViewById(R.id.refractID);
         efficiency = (Button)findViewById(R.id.efficiencyID);
         WVA = (Button)findViewById(R.id.WAV);
+        gradient_value = (Button)findViewById(R.id.gradient_value_ID);
 
 
 
@@ -233,6 +234,12 @@ public class MainActivity extends AppCompatActivity {
         if(v.getId()==R.id.WAV){
             Intent goawv = new Intent(MainActivity.this, VoltageWattageCurrent.class);
             startActivity(goawv);
+        }
+    }
+    public void goactivity(View v){
+        if(v.getId()==R.id.gradient_value_ID){
+            Intent forward = new Intent(MainActivity.this, gradient_value.class);
+            startActivity(forward);
         }
     }
     public void operationHandle(View v, int optype){
