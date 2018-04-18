@@ -183,10 +183,11 @@
                     android:text="Wattage, Voltage or Amperage" />
 
                 <Button
-                    android:id="@+id/button3"
+                    android:id="@+id/momentumID"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="gomomentum"
                     android:text="momentum of an object" />
 
                 <Button
