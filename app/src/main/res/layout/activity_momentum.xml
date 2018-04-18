@@ -33,6 +33,7 @@
         android:id="@+id/calculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="work"
         android:text="calculate" />
 
 </LinearLayout>
