@@ -8,7 +8,7 @@
     tools:context=".periodic_time">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/frequencyID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -16,9 +16,10 @@
         android:inputType="textPersonName" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/calculateID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="frequency"
         android:text="calculate" />
 
     <ImageView
