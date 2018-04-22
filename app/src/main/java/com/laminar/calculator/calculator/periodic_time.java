@@ -1,10 +1,9 @@
 package com.laminar.calculator.calculator;
 
+import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -17,7 +16,6 @@ public class periodic_time extends AppCompatActivity {
     }
     public void frequency(View a){
         EditText frequencyID = (EditText)findViewById(R.id.frequencyID);
-        Button calculateID = (Button)findViewById(R.id.calculateID);
         TextView answer = (TextView)findViewById(R.id.answer);
         if(frequencyID.length()==0){
             Snackbar.make(a, "Please enter your values into the equation", Snackbar.LENGTH_LONG)

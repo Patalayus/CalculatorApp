@@ -15,6 +15,12 @@
         android:hint="Please enter your frequency (Hz)"
         android:inputType="number|numberSigned|numberDecimal" />
 
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
     <Button
         android:id="@+id/calculateID"
         android:layout_width="match_parent"
