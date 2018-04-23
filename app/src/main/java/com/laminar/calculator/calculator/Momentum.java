@@ -29,6 +29,7 @@ public class Momentum extends AppCompatActivity {
             double velocityCON = Double.parseDouble(velocity.getText().toString());
             double answer_total = massCON * velocityCON;
             answer.setText("Your momentum is "+answer_total+"kgm/s");
+
         }
     }
 }
