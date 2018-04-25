@@ -191,6 +191,13 @@
                     android:text="momentum of an object" />
 
                 <Button
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="velocity of a wave" />
+
+                <Button
                     android:id="@+id/gradient_value_ID"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
