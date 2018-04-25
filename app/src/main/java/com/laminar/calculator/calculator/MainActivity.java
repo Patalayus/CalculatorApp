@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView result;
     EditText Number1;
-    Button add, subtract,divide, multiply, power, calculate, percentage, qformula, circle_class, youngclass, classrefract, efficiency, WVA, gradient_value, momentum, periodic_time;
+    Button add, subtract,divide, multiply, power, calculate, percentage, qformula, circle_class, youngclass, classrefract, efficiency, WVA, gradient_value, momentum, periodic_time, velocity;
 
     double enps_result;
     //premative float variable
@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
         gradient_value = (Button)findViewById(R.id.gradient_value_ID);
         momentum = (Button)findViewById(R.id.momentumID);
         periodic_time = (Button)findViewById(R.id.pdtID);
+        velocity = (Button)findViewById(R.id.velocityID);
 
 
 
@@ -256,6 +257,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(goperiod);
         }
     }
+
     public void operationHandle(View v, int optype){
         if(Number1.length()==0){
             if (current_op != 0) {

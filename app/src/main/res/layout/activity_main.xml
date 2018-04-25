@@ -191,7 +191,7 @@
                     android:text="momentum of an object" />
 
                 <Button
-                    android:id="@+id/button3"
+                    android:id="@+id/velocityID"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
