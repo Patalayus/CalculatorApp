@@ -257,6 +257,12 @@ public class MainActivity extends AppCompatActivity {
             startActivity(goperiod);
         }
     }
+    public void govelocity(View v){
+        if(v.getId()==R.id.velocityID){
+            Intent govelocity = new Intent(MainActivity.this, velocity.class);
+            startActivity(govelocity);
+        }
+    }
 
     public void operationHandle(View v, int optype){
         if(Number1.length()==0){
