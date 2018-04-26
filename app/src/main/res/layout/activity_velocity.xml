@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Please enter your frequency (Hz)"
-        android:inputType="textPersonName" />
+        android:inputType="number|numberSigned|numberDecimal" />
 
     <EditText
         android:id="@+id/wavelengthID"
@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Please give the wavelength of wave (m)"
-        android:inputType="textPersonName" />
+        android:inputType="number|numberSigned|numberDecimal" />
 
     <TextView
         android:id="@+id/answer"
