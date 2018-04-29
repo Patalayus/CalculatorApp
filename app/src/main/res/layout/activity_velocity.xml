@@ -36,6 +36,13 @@
         android:onClick="vel"
         android:text="calculate" />
 
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Work out the velocity of a wave"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
     <ImageView
         android:id="@+id/imageView14"
         android:layout_width="match_parent"
