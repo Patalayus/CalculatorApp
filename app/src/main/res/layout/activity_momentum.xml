@@ -36,6 +36,13 @@
         android:onClick="work"
         android:text="calculate" />
 
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Work out the momentum of an object"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
     <ImageView
         android:id="@+id/imageView13"
         android:layout_width="match_parent"
