@@ -35,4 +35,11 @@
         android:layout_height="wrap_content"
         android:onClick="go"
         android:text="CALCULATE" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Work out the wattage in a circuit "
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 </LinearLayout>
