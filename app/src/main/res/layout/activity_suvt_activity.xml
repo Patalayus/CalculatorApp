@@ -86,9 +86,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.09"
-            android:text="Total."
+            android:text="Total"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            tools:text="Total." />
+            tools:text="Total" />
 
     </LinearLayout>
 
