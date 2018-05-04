@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView result;
     EditText Number1;
-    Button add, subtract,divide, multiply, power, calculate, percentage, qformula, circle_class, youngclass, classrefract, efficiency, WVA, gradient_value, momentum, periodic_time, velocity;
+    Button add, subtract,divide, multiply, power, calculate, percentage, qformula, circle_class, youngclass, classrefract, efficiency, WVA, gradient_value, momentum, periodic_time, velocity, prism;
 
     double enps_result;
     //premative float variable
@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
         momentum = (Button)findViewById(R.id.momentumID);
         periodic_time = (Button)findViewById(R.id.pdtID);
         velocity = (Button)findViewById(R.id.velocityID);
+        prism = (Button)findViewById(R.id.prismID);
 
 
 
@@ -261,6 +262,12 @@ public class MainActivity extends AppCompatActivity {
         if(v.getId()==R.id.velocityID){
             Intent govelocity = new Intent(MainActivity.this, velocity.class);
             startActivity(govelocity);
+        }
+    }
+    public void goprism(View v){
+        if(v.getId()==R.id.prismID){
+            Intent goprism = new Intent(MainActivity.this, VolumeOblong.class);
+            startActivity(goprism);
         }
     }
 

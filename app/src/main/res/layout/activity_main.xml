@@ -183,11 +183,12 @@
                     android:text="Wattage, Voltage or Amperage" />
 
                 <Button
-                    android:id="@+id/button4"
+                    android:id="@+id/prismID"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Volume of a  " />
+                    android:onClick="goprism"
+                    android:text="Volume of a prism  " />
 
                 <Button
                     android:id="@+id/momentumID"
