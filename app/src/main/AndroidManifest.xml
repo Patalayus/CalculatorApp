@@ -69,7 +69,8 @@
         <activity android:name=".gradient_value" />
         <activity android:name=".Momentum" />
         <activity android:name=".periodic_time" />
-        <activity android:name=".velocity"></activity>
+        <activity android:name=".velocity" />
+        <activity android:name=".VolumeOblong"></activity>
     </application>
 
 </manifest>
