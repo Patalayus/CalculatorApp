@@ -7,12 +7,24 @@
     android:orientation="vertical"
     tools:context=".VolumeOblong">
 
-    <TextView
-        android:id="@+id/textView25"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="What prism are you trying to work out the volume of?"
-        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+        android:layout_height="44dp"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="288dp"
+            android:layout_height="28dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="What prism?"
+            android:textAppearance="@android:style/TextAppearance.Material.Large" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/button4"
