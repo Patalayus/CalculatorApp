@@ -70,7 +70,10 @@
         <activity android:name=".Momentum" />
         <activity android:name=".periodic_time" />
         <activity android:name=".velocity" />
-        <activity android:name=".VolumeOblong"></activity>
+        <activity android:name=".VolumeOblong" />
+        <activity android:name=".cylinder_volume" />
+        <activity android:name=".square_prism_volume" />
+        <activity android:name=".triangular_prism_volume"></activity>
     </application>
 
 </manifest>
