@@ -30,23 +30,33 @@
         android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="gocylinder"
         android:text="Cylinder" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/squarebasedID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="gosquareprism"
         android:text="Square-Based Prism" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/triangularbasedID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="gotriangleprism"
         android:text="Triangular-Based Prism" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/octagonalbasedID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="gooctagonalprism"
         android:text="Octagonal-Based Prism" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/triangularprism" />
 </LinearLayout>
