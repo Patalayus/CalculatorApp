@@ -73,7 +73,8 @@
         <activity android:name=".VolumeOblong" />
         <activity android:name=".cylinder_volume" />
         <activity android:name=".square_prism_volume" />
-        <activity android:name=".triangular_prism_volume"></activity>
+        <activity android:name=".triangular_prism_volume" />
+        <activity android:name=".octagonal_volume"></activity>
     </application>
 
 </manifest>

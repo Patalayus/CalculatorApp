@@ -28,21 +28,21 @@ public class VolumeOblong extends AppCompatActivity {
     }
     public void gosquareprism(View v){
         if(v.getId()==R.id.squarebasedID){
-            Intent gosquarebased = new Intent(VolumeOblong.this, cylinder_volume.class);
+            Intent gosquarebased = new Intent(VolumeOblong.this, square_prism_volume.class);
             startActivity(gosquarebased);
         }
 
     }
     public void gotriangleprism(View v){
         if(v.getId()==R.id.triangularbasedID){
-            Intent gotriangular = new Intent(VolumeOblong.this, cylinder_volume.class);
+            Intent gotriangular = new Intent(VolumeOblong.this, triangular_prism_volume.class);
             startActivity(gotriangular);
         }
 
     }
     public void gooctagonalprism(View v){
         if(v.getId()==R.id.octagonalbasedID){
-            Intent gooctagonal = new Intent(VolumeOblong.this, cylinder_volume.class);
+            Intent gooctagonal = new Intent(VolumeOblong.this, octagonal_volume.class);
             startActivity(gooctagonal);
         }
 
