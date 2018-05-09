@@ -8,24 +8,39 @@
     tools:context=".square_prism_volume">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/widthID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Please enter your radius"
+        android:hint="Please enter your width (m)"
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/heightID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Please enter  your length"
+        android:hint="Please enter your height (m)"
         android:inputType="textPersonName" />
 
-    <Button
-        android:id="@+id/button5"
+    <EditText
+        android:id="@+id/lengthID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Please enter  your length (m)"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <Button
+        android:id="@+id/calculateID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="work"
         android:text="calculate" />
 </LinearLayout>
