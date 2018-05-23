@@ -35,4 +35,10 @@
         android:layout_height="wrap_content"
         android:onClick="work"
         android:text="Calculate" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="match_parent"
+        android:layout_height="213dp"
+        app:srcCompat="@drawable/triangular" />
 </LinearLayout>

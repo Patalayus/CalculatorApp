@@ -42,4 +42,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Calculate" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:srcCompat="@drawable/octagonal" />
 </LinearLayout>

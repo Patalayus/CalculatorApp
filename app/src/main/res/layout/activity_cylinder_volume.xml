@@ -35,4 +35,10 @@
         android:layout_height="wrap_content"
         android:text="calculate" />
 
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cylinder" />
+
 </LinearLayout>
