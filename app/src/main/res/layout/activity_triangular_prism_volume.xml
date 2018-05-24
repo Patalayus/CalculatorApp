@@ -39,6 +39,6 @@
     <ImageView
         android:id="@+id/imageView17"
         android:layout_width="match_parent"
-        android:layout_height="213dp"
+        android:layout_height="194dp"
         app:srcCompat="@drawable/triangular" />
 </LinearLayout>
