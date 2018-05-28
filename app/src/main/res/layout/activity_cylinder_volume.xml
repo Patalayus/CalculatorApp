@@ -8,7 +8,7 @@
     tools:context=".cylinder_volume">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/radiusID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -16,7 +16,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/lengthID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -24,15 +24,16 @@
         android:inputType="textPersonName" />
 
     <TextView
-        android:id="@+id/textView27"
+        android:id="@+id/outputID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/calculateID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="cylinder"
         android:text="calculate" />
 
     <ImageView
