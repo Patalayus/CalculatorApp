@@ -17,6 +17,7 @@ public class cylinder_volume extends AppCompatActivity {
     public void work(View a){
         EditText radius = (EditText)findViewById(R.id.radiusID);
         EditText length = (EditText)findViewById(R.id.lengthID);
+        TextView output = (TextView)findViewById(R.id.outputID);
 
         if(radius.length()==0||length.length()==0){
             Snackbar.make(a, "Please enter your values into the equation", Snackbar.LENGTH_LONG)
@@ -25,10 +26,11 @@ public class cylinder_volume extends AppCompatActivity {
             // Volume of cylinder = Length * (3.141592654 * R^2)
             double radCON = Double.parseDouble(radius.getText().toString());
             double lenCON = Double.parseDouble(length.getText().toString());
+            double radCONSQR = radCON * radCON;
 
-
-            double answer_total = WidthCON * HeightCON * LenCON;
-            answer.setText("Your volume is "+answer_total+"m^3");
+            double totalradCON = Math.PI * radCONSQR;
+            double answer_total = totalradCON * lenCON;
+            output.setText("Your volume is "+answer_total+"m^3");
         }
     }
 }
