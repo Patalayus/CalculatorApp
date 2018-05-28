@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Please enter your radius (m)"
-        android:inputType="textPersonName" />
+        android:inputType="number|numberSigned|numberDecimal" />
 
     <EditText
         android:id="@+id/lengthID"
@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Please enter your length (m)"
-        android:inputType="textPersonName" />
+        android:inputType="number|numberSigned|numberDecimal" />
 
     <TextView
         android:id="@+id/outputID"
@@ -33,7 +33,7 @@
         android:id="@+id/calculateID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="cylinder"
+        android:onClick="work"
         android:text="calculate" />
 
     <ImageView
