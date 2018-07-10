@@ -18,23 +18,21 @@ public class triangular_prism_volume extends AppCompatActivity {
     public void work2(View a){
         EditText height = (EditText)findViewById(R.id.heightID);
         EditText width = (EditText)findViewById(R.id.widthID);
-        EditText
+        EditText depth = (EditText)findViewById(R.id.depthID);
         TextView answer = (TextView)findViewById(R.id.answerID);
 
-        if(height.length()==0||width.length()==0){
+        if(height.length()==0||width.length()==0||depth.length()==0){
             Snackbar.make(a, "Please enter your values into the equation", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show();
         }else{
             // Volume of triangular prism = (w * h)/2
             double heiCON = Double.parseDouble(height.getText().toString());
             double widCON = Double.parseDouble(width.getText().toString());
+            double depCON = Double.parseDouble(depth.getText().toString());
             double total = heiCON * widCON;
             double total2 = total / 2;
-            double total3 = total
-
-            double totalradCON = Math.PI * radCONSQR;
-            double answer_total = totalradCON * lenCON;
-            output.setText("Your volume is "+answer_total+"m^3");
+            double total3 = total * depCON;
+            answer.setText("Your volume is"+total3+"m^3");
         }
     }
 }
