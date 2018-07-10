@@ -13,9 +13,9 @@ public class triangular_prism_volume extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_triangular_prism_volume);
+    }
 
-        }
-    public void work2(View a){
+    public void work(View a){
         EditText height = (EditText)findViewById(R.id.heightID);
         EditText width = (EditText)findViewById(R.id.widthID);
         EditText depth = (EditText)findViewById(R.id.depthID);
@@ -31,7 +31,7 @@ public class triangular_prism_volume extends AppCompatActivity {
             double depCON = Double.parseDouble(depth.getText().toString());
             double total = heiCON * widCON;
             double total2 = total / 2;
-            double total3 = total * depCON;
+            double total3 = total2 * depCON;
             answer.setText("Your volume is"+total3+"m^3");
         }
     }

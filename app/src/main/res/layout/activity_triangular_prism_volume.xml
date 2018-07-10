@@ -41,7 +41,7 @@
         android:id="@+id/button5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="work2"
+        android:onClick="work"
         android:text="Calculate" />
 
     <ImageView
