@@ -14,6 +14,7 @@ public class square_prism_volume extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_square_prism_volume);
     }
+
     public void work(View a){
         EditText width = (EditText)findViewById(R.id.widthID);
         EditText height = (EditText)findViewById(R.id.heightID);
