@@ -19,7 +19,7 @@ public class triangular_prism_volume extends AppCompatActivity {
         EditText height = (EditText)findViewById(R.id.heightID);
         EditText width = (EditText)findViewById(R.id.widthID);
         EditText depth = (EditText)findViewById(R.id.depthID);
-        TextView answer = (TextView)findViewById(R.id.answerID);
+        TextView output = (TextView)findViewById(R.id.answerID);
 
         if(height.length() == 0 || width.length() == 0 || depth.length() == 0) {
             Snackbar.make(a, "Please enter your values into the equation", Snackbar.LENGTH_LONG)
@@ -32,9 +32,10 @@ public class triangular_prism_volume extends AppCompatActivity {
             double total = heiCON * widCON;
             double total2 = total / 2;
             double total3 = total2 * depCON;
-            answer.setText("Your volume is" + total3 + "m^3");
+            output.setText("Your volume is" + total3 + "m^3");
 
         }
     }
 }
+
 
