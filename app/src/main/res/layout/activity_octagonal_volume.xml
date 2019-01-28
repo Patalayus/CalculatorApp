@@ -37,15 +37,16 @@
         android:layout_height="wrap_content"
         android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Calculate" />
-
     <ImageView
         android:id="@+id/imageView18"
         android:layout_width="match_parent"
         android:layout_height="220dp"
         app:srcCompat="@drawable/octagonal" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   Coming Soon..."
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
 </LinearLayout>
