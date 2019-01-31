@@ -15,7 +15,6 @@ public class triangular_prism_volume extends AppCompatActivity {
         setContentView(R.layout.activity_triangular_prism_volume);
     }
 
-
     public void make(View a) {
         EditText widthV = (EditText)findViewById(R.id.widthID);
         EditText heightV = (EditText)findViewById(R.id.heightID);
