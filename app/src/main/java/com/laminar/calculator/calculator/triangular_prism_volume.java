@@ -15,31 +15,30 @@ public class triangular_prism_volume extends AppCompatActivity {
         setContentView(R.layout.activity_triangular_prism_volume);
     }
 
-    public void due(View a) {
-        EditText height = (EditText)findViewById(R.id.heightID);
-        EditText width = (EditText)findViewById(R.id.widthID);
-        EditText depth = (EditText)findViewById(R.id.depthID);
-        TextView output = (TextView)findViewById(R.id.answerID);
 
-        if(height.length() == 0 || width.length() == 0 || depth.length() == 0) {
+    public void make(View a) {
+        EditText widthV = (EditText)findViewById(R.id.widthID);
+        EditText heightV = (EditText)findViewById(R.id.heightID);
+        EditText depthV = (EditText)findViewById(R.id.depthID);
+        TextView giveuser = (TextView)findViewById(R.id.answerID);
+
+        if(widthV.length()==0||heightV.length()==0||depthV.length()==0){
             Snackbar.make(a, "Please enter your values into the equation", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show();
-        } else {
-            //Volume of triangular prism = (w * h)/2
-            double heiCON = Double.parseDouble(height.getText().toString());
-            double widCON = Double.parseDouble(width.getText().toString());
-            double depCON = Double.parseDouble(depth.getText().toString());
+        }else{
+            double widthV2 = Double.parseDouble(widthV.getText().toString());
+            double heightV2 = Double.parseDouble(heightV.getText().toString());
+            double depthV2 = Double.parseDouble(depthV.getText().toString());
 
-            output.setText("your volume is "+ depCON);
+            double test = widthV2 * heightV2 * depthV2;
+            double test2 = test/2;
 
-            //double total = heiCON * widCON;
-            //double total2 = total / 2;
-            //double total3 = total2 * depCON;
-
-            //output.setText("Your volume is" + total3 + "m^3");
-
+            giveuser.setText("Your volume is "+test2+"m^3");
         }
+
     }
+
 }
+
 
 

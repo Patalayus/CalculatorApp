@@ -16,7 +16,7 @@
         android:inputType="number|numberSigned|numberDecimal" />
 
     <EditText
-        android:id="@+id/weightID"
+        android:id="@+id/widthID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -38,11 +38,11 @@
         android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/calculateID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="due"
-        android:text="Calculate" />
+        android:onClick="make"
+        android:text="calculate" />
 
     <ImageView
         android:id="@+id/imageView17"
