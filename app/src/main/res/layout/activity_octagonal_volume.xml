@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Please enter your height (m)"
+        android:hint="Please enter your edge height (m)"
         android:inputType="number|numberSigned|numberDecimal" />
 
     <EditText
@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Please enter your width (m)"
+        android:hint="Please enter your edge width (m)"
         android:inputType="number|numberSigned|numberDecimal" />
 
     <EditText
@@ -28,11 +28,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Please enter your length (m)"
+        android:hint="Please enter your edge length (m)"
         android:inputType="number|numberSigned|numberDecimal" />
 
     <TextView
-        android:id="@+id/textView26"
+        android:id="@+id/TextOutID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="@android:style/TextAppearance.Material.Medium" />
