@@ -49,4 +49,11 @@
         android:layout_width="match_parent"
         android:layout_height="214dp"
         app:srcCompat="@drawable/drawingcube" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Work out the volume of a cube"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 </LinearLayout>
