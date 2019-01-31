@@ -8,7 +8,7 @@
     tools:context=".octagonal_volume">
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/heightID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -16,7 +16,7 @@
         android:inputType="number|numberSigned|numberDecimal" />
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/widthID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -24,7 +24,7 @@
         android:inputType="number|numberSigned|numberDecimal" />
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/lengthID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -41,6 +41,7 @@
         android:id="@+id/button5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="work"
         android:text="calculate" />
 
     <ImageView

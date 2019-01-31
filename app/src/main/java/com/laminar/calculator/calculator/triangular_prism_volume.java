@@ -29,10 +29,14 @@ public class triangular_prism_volume extends AppCompatActivity {
             double heiCON = Double.parseDouble(height.getText().toString());
             double widCON = Double.parseDouble(width.getText().toString());
             double depCON = Double.parseDouble(depth.getText().toString());
-            double total = heiCON * widCON;
-            double total2 = total / 2;
-            double total3 = total2 * depCON;
-            output.setText("Your volume is" + total3 + "m^3");
+
+            output.setText("your volume is "+ depCON);
+
+            //double total = heiCON * widCON;
+            //double total2 = total / 2;
+            //double total3 = total2 * depCON;
+
+            //output.setText("Your volume is" + total3 + "m^3");
 
         }
     }
