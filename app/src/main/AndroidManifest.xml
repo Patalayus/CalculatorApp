@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".pythagoras_activity"></activity>
         <activity
             android:name=".MainActivity"
             android:windowSoftInputMode="adjustResize|stateHidden">
@@ -74,7 +75,7 @@
         <activity android:name=".cylinder_volume" />
         <activity android:name=".square_prism_volume" />
         <activity android:name=".triangular_prism_volume" />
-        <activity android:name=".octagonal_volume"></activity>
+        <activity android:name=".octagonal_volume" />
     </application>
 
 </manifest>
