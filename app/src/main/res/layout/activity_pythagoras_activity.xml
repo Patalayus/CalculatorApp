@@ -13,4 +13,28 @@
         android:layout_height="wrap_content"
         android:text="Please select side"
         android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <Button
+        android:id="@+id/hypotenuseID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hypotenuse" />
+
+    <Button
+        android:id="@+id/oppositeID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opposite" />
+
+    <Button
+        android:id="@+id/adjacentID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adjacent" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/pythagoras" />
 </LinearLayout>
