@@ -22,4 +22,16 @@
         android:ems="10"
         android:hint="Please enter your adjacent (m)"
         android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <Button
+        android:id="@+id/CalculateID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="calculate" />
 </LinearLayout>
