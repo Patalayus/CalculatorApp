@@ -35,4 +35,10 @@
         android:layout_height="wrap_content"
         android:onClick="work"
         android:text="calculate" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="match_parent"
+        android:layout_height="276dp"
+        app:srcCompat="@drawable/hypotenuse" />
 </LinearLayout>
