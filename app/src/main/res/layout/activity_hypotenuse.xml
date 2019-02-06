@@ -41,4 +41,11 @@
         android:layout_width="match_parent"
         android:layout_height="276dp"
         app:srcCompat="@drawable/hypotenuse" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Work out the hypotenuse of a right angled triangle."
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 </LinearLayout>
