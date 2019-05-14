@@ -36,7 +36,7 @@ public class hypotenuse extends AppCompatActivity {
             double hypTotal = totAjdSquared + totOppSquared;
 
             //output answer
-            answerTextView.setText("Your hypotenuse is "+hypTotal);
+            answerTextView.setText("Your hypotenuse is "+hypTotal+"m^2");
         }
 
     }
