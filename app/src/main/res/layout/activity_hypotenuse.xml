@@ -8,23 +8,23 @@
     tools:context=".hypotenuse">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editText_opposite"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Please enter your opposite (m)"
-        android:inputType="textPersonName" />
+        android:inputType="number|numberSigned|numberDecimal" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/editText_adjacent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Please enter your adjacent (m)"
-        android:inputType="textPersonName" />
+        android:inputType="number|numberSigned|numberDecimal" />
 
     <TextView
-        android:id="@+id/textView30"
+        android:id="@+id/textView_answerID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="@android:style/TextAppearance.Material.Medium" />
@@ -33,7 +33,7 @@
         android:id="@+id/CalculateID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="work"
+        android:onClick="calculateHyp"
         android:text="calculate" />
 
     <ImageView
