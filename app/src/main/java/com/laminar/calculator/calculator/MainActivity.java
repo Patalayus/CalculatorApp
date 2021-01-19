@@ -75,11 +75,13 @@ public class MainActivity extends AppCompatActivity {
             }
         };
 
-
+        //textviews
         result = (TextView) findViewById(R.id.enps_result);
 
+        //edittexts
         Number1 = (EditText) findViewById(R.id.Number1);
 
+        //buttons
         add = (Button) findViewById(R.id.sumof);
         subtract = (Button) findViewById(R.id.subtract);
         multiply = (Button) findViewById(R.id.bleh);
