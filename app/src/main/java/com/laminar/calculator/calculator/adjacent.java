@@ -17,35 +17,25 @@ public class adjacent extends AppCompatActivity {
 
     public void calculateAdj(View a) {
         EditText opposite = (EditText) findViewById(R.id.oppositeEditText);
-        EditText hypotenuse = (EditText) findViewById(R.id.hypotenuseEditText);
-        TextView answerTextView5 = (TextView) findViewById(R.id.textViewOutput);
+        EditText hypotenuse_ = (EditText) findViewById(R.id.hypotenuseEditText);
+        TextView answerTextView2 = (TextView) findViewById(R.id.textViewOutput);
 
-        if(opposite.length()==0||hypotenuse.length()==0){
+        if(opposite.length()==0||hypotenuse_.length()==0){
             Snackbar.make(a, "Please enter your values into the equation", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show();
         }else{
             //convert the text to a double format so math can be applied
             double totOpp = Double.parseDouble(opposite.getText().toString());
-            double totHyp = Double.parseDouble(hypotenuse.getText().toString());
+            double totHyp = Double.parseDouble(hypotenuse_.getText().toString());
 
-            //complete application calculation here
-            //a^2 = c^2 - b^2
-            //adjacent = hypotenuse - opposite
-
-            //c squared
-            double hypotenuseSqrd = totHyp * totOpp;
-
-
-            //b squared
-            double oppositeSqrd = totOpp * totOpp;
-
-            double tot2sqr = hypotenuseSqrd - oppositeSqrd;
-            double answer1 = Math.sqrt(tot2sqr);
+            double OppSqrd = totOpp * totOpp;
+            double HypSqrd = totHyp * totHyp;
+            double Opp2Root = HypSqrd - OppSqrd;
+            double tot = Math.sqrt(Opp2Root);
 
             //output answer
-            answerTextView5.setText("Your adjacent is "+answer1+"m");
+            answerTextView2.setText("Your adjacent is " + tot + "m");
         }
-
 
     }
 }
