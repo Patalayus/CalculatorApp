@@ -20,4 +20,21 @@ public class pythagoras_activity extends AppCompatActivity {
             startActivity(hypotenuse_Intent);
         }
     }
+
+    public void loadOpposite(View a){
+        //when opposite button is pressed
+        if(a.getId()==R.id.oppositeID){
+            Intent opposite_intent = new Intent(pythagoras_activity.this, opposite.class);
+            startActivity(opposite_intent);
+        }
+    }
+
+    public void loadAdjacentActivity(View a){
+        //when adjacent activity is activated
+        if(a.getId()==R.id.adjacentID){
+            Intent adjacent_intent = new Intent(pythagoras_activity.this, adjacent.class);
+            startActivity(adjacent_intent);
+        }
+
+    }
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.laminar.calculator.calculator">
-    
+
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".hypotenuse"></activity>
+        <activity android:name=".adjacent"></activity>
+        <activity android:name=".opposite" />
+        <activity android:name=".hypotenuse" />
         <activity android:name=".pythagoras_activity" />
         <activity
             android:name=".MainActivity"
