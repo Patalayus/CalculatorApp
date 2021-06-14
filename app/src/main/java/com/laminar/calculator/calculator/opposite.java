@@ -10,4 +10,10 @@ public class opposite extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_opposite);
     }
+
+    //complete application calculation here
+    //b^2 = c^2 - a^2
+    //opposite = hypotenuse - adjacent
+
+
 }

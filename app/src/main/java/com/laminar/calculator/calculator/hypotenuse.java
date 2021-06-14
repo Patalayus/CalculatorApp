@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import java.lang.Math;
 
 public class hypotenuse extends AppCompatActivity {
 
@@ -34,9 +35,11 @@ public class hypotenuse extends AppCompatActivity {
             double totOppSquared = totOpp*totOpp;
             double totAjdSquared = totAdj*totAdj;
             double hypTotal = totAjdSquared + totOppSquared;
+            //remember to root total to get final value
+            double rooted = Math.sqrt(hypTotal);
 
             //output answer
-            answerTextView.setText("Your hypotenuse is "+hypTotal+"m^2");
+            answerTextView.setText("Your hypotenuse is "+rooted+"m");
 
         }
 

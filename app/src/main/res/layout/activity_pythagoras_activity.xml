@@ -25,12 +25,14 @@
         android:id="@+id/oppositeID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="loadOpposite"
         android:text="Opposite" />
 
     <Button
         android:id="@+id/adjacentID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="loadAdjacentActivity"
         android:text="Adjacent" />
 
     <ImageView
