@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LaminarCalculatorApp2020Clone.iml" filepath="$PROJECT_DIR$/.idea/modules/LaminarCalculatorApp2020Clone.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/LaminarCalculatorApp2020Clone.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/LaminarCalculatorApp2020Clone.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CalculatorApp.iml" filepath="$PROJECT_DIR$/.idea/modules/CalculatorApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CalculatorApp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CalculatorApp.app.iml" />
     </modules>
   </component>
 </project>
