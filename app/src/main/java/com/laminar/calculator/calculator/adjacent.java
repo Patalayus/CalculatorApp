@@ -18,7 +18,7 @@ public class adjacent extends AppCompatActivity {
     public void calculateAdj(View a) {
         EditText opposite = (EditText) findViewById(R.id.oppositeEditText);
         EditText hypotenuse = (EditText) findViewById(R.id.hypotenuseEditText);
-        TextView answerTextView1 = (TextView) findViewById(R.id.textViewOutput);
+        TextView answerTextView5 = (TextView) findViewById(R.id.textViewOutput);
 
         if(opposite.length()==0||hypotenuse.length()==0){
             Snackbar.make(a, "Please enter your values into the equation", Snackbar.LENGTH_LONG)
@@ -32,14 +32,18 @@ public class adjacent extends AppCompatActivity {
             //a^2 = c^2 - b^2
             //adjacent = hypotenuse - opposite
 
-            double oppositeSqrd = totOpp * totOpp;
+            //c squared
             double hypotenuseSqrd = totHyp * totOpp;
 
+
+            //b squared
+            double oppositeSqrd = totOpp * totOpp;
+
             double tot2sqr = hypotenuseSqrd - oppositeSqrd;
-            double ans = Math.sqrt(tot2sqr);
+            double answer1 = Math.sqrt(tot2sqr);
 
             //output answer
-            answerTextView1.setText("Your adjacent is "+ans+"m");
+            answerTextView5.setText("Your adjacent is "+answer1+"m");
         }
 
 
