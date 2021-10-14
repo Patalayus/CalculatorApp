@@ -19,4 +19,6 @@ The application allows for a number of different operations to be carried out. T
 
 Features will continually be integrated throughout ongoing development, I will gladly accept any feedback on the application or suggestions for future work.
 It is also important to note that this application is completely open-source and so if you wish to aid in development please do not hesitate to contact me.
+
+[Link to **Google Play Store Page**](https://play.google.com/store/apps/details?id=com.laminar.calculator.calculator)
 #### by Patalayus :octocat:
